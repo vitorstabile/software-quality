@@ -228,6 +228,80 @@ Resilience is related to robustness in that the key is unforeseen changes: The c
 
 **Exam Question: If a web service crashes when called with a give combination of valid inputs, can you claim that the web service is not robust? Explain.**
 
+**Software Dependability Threats**
+
+<br>
+
+<div align="center"><img src="img/fault-w683-h383.png" width=683 height=383><br><sub>Fig 12 - Software Dependability Threats - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**Fault**: A condition that may cause a system to fail in performing its required function
+
+**Error**: A measure of the difference between the actual and the ideal.
+
+**Failure**: The inability of a system or component to perform a required function according to its specifications
+
+**Classification of faults**
+
+Caused by what?
+– Physical faults
+– Human-Made faults
+
+Why?
+– Accidental faults
+– Intentional non malicious faults / Intentional malicious faults
+
+When?
+– Development faults: design, coding, configuration, upgrading
+– Operational faults: in use
+
+Where (with respect to the system)?
+– Internal faults
+– External faults
+
+How long?
+– Permanent faults
+– Transient faults
+
+<br>
+
+<div align="center"><img src="img/fault3-w770-h636.png" width=770 height=636><br><sub>Fig 13 - Types of Software Faults - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+A fault can be originated in the software development process, since requirement, specification and so on...Residual software faults (bugs), originated from defects in design or implementation of software components and its integration in a system, that escape testing and other fault avoidance method.
+
+**Different types of software faults**
+
+Bohrbugs -> Bugs that cause failures deterministically and easiest to find during testing, 
+- Fault tolerance = design diversity and redundancy
+
+Mandelbugs -> Re-execution after a failure caused by a Mandelbug will generally not cause another failure and cery difficult to find and correct during testing
+- Fault tolerance = simple retries and recovery-oriented computing using checkpointing
+
+Aging-related -> Bugs tend to be activated and cause failures after long periods of system run-time and Difficult to find during testing (but static code analysis is effective for some of them)
+- Fault tolerance = software rejuvenation
+
+**Software Reliability Threats** (Other terminology - Vision) 
+
+<br>
+
+<div align="center"><img src="img/fault2-w647-h102.png" width=647 height=102><br><sub>Fig 13 - Software Reliability Threats - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**Error**: **Human action** that results in software containing a fault.
+
+**Fault**: A cause for an internal error
+
+**Failure**: any observable divergence of software behavior in execution from user needs
+
+The origin of software failures lies in a software error made by a programmer. An error can be a grammatical error in one or more of the code lines, or a logical error in carrying out one or more of the client’s requirements.
+
+However, not all software errors become software faults. In other words, in some cases, the software error can cause improper functioning of the software in general or in a specific application. In many other cases, erroneous code lines will not affect the functionality of the software as a whole; in a part of these cases, the fault will be corrected or “neutralized” by subsequent code lines.
+
+We are interested mainly in the software failures that disrupt our use of the software. This requires us to examine the relationship between software faults and software failures. Do all software faults end with software failures? Not necessarily: a software fault becomes a software failure only when it is “activated” – when the software user tries to apply the specific, faulty application. In many situations, a software fault is never activated due to the user’s lack of interest in the specific application or to the fact that the combination of conditions necessary to activate the fault never occurs.
 
 
 #### <a name="chapter2part2"></a>Chapter 2 - Part 2: Defect Prevention and Defect Removal
