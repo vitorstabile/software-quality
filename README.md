@@ -318,6 +318,32 @@ However, not all software errors become software faults. In other words, in some
 We are interested mainly in the software failures that disrupt our use of the software. This requires us to examine the relationship between software faults and software failures. Do all software faults end with software failures? Not necessarily: a software fault becomes a software failure only when it is “activated” – when the software user tries to apply the specific, faulty application. In many situations, a software fault is never activated due to the user’s lack of interest in the specific application or to the fact that the combination of conditions necessary to activate the fault never occurs.
 
 
+**Failure Modes**
+
+Computer failures are normally complex, as result of the high complexity of systems and simple failure modes such as pure silent failures (clean crash or halt failures) are relatively rare.
+
+**Failure mode**: condensed description of the way a component/computer system fails
+
+Mainly from the operating system perspective. CRASH = Catastrophic, Restart, Abort, Silent, Hindering
+
+- Catastrophic (OS crashes/multiple tasks affected)
+- Restart (task/process hangs, requiring restart)
+- Abort (task/process aborts, e.g., segmentation violation)
+- Silent (no error code returned when one should be)
+- Hindering (incorrect error code returned)
+
+<br>
+
+<div align="center"><img src="img/failure-w479-h360.png" width=479 height=360><br><sub>Fig 14 - Tips of Failure - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+The Domain can be divided into Value Failures when an improper value is computed and Timing Failures when the system delivers its service either early or late.
+
+The Perception by Several Users can be divided into Consistent Failures when all users have the same perception of the failure or Inconsistent Failures when users have different perceptions of the failure.
+
+The types of failures can be divided into several levels, from the most negligible to the most impactful. The consequences of lesser impact are called benign failure, and those of more significant impact is called catastrophic failure
+
 #### <a name="chapter2part2"></a>Chapter 2 - Part 2: Defect Prevention and Defect Removal
 
 #### <a name="chapter2part3"></a>Chapter 2 - Part 3: Software Dependability Techniques
