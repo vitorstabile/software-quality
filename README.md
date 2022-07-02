@@ -39,7 +39,7 @@
 
 #### <a name="chapter1part1"></a>Chapter 1 - Part 1: Concepts and Terminology
 
-**Software Quality– A Definition**
+**Software quality – a definition**
 
 Software quality is the degree to which a software product meets established requirements; however, quality depends upon the degree to which established requirements accurately represent stakeholder needs, wants, and expectations.
 
