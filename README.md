@@ -296,6 +296,13 @@ Mandelbugs -> Re-execution after a failure caused by a Mandelbug will generally 
 Aging-related -> Bugs tend to be activated and cause failures after long periods of system run-time and Difficult to find during testing (but static code analysis is effective for some of them)
 - Fault tolerance = software rejuvenation
 
+Transient fault: occurs only once and we cannot trace it later on. If we repeat the operation, the fault goes away.
+
+Permanent fault:  is one that continues to exist until the faulty component is repaired
+
+Intermittent fault: becomes apparent not continuously but at irregular intervals
+
+
 **Software Reliability Threats** (Other terminology - Vision) 
 
 <br>
@@ -374,6 +381,7 @@ Related to general system engineering techniques (design methodologies, construc
 - Probabilistic assessment, modeling, operational evaluation,…
 
 #### <a name="chapter2part2"></a>Chapter 2 - Part 2: Software Dependability Techniques
+
 
 ## <a name="chapter3"></a>Chapter 3: Analysis and Formal Methods (Static)
 
