@@ -317,7 +317,6 @@ However, not all software errors become software faults. In other words, in some
 
 We are interested mainly in the software failures that disrupt our use of the software. This requires us to examine the relationship between software faults and software failures. Do all software faults end with software failures? Not necessarily: a software fault becomes a software failure only when it is “activated” – when the software user tries to apply the specific, faulty application. In many situations, a software fault is never activated due to the user’s lack of interest in the specific application or to the fact that the combination of conditions necessary to activate the fault never occurs.
 
-
 **Failure Modes**
 
 Computer failures are normally complex, as result of the high complexity of systems and simple failure modes such as pure silent failures (clean crash or halt failures) are relatively rare.
@@ -343,6 +342,32 @@ The Domain can be divided into Value Failures when an improper value is computed
 The Perception by Several Users can be divided into Consistent Failures when all users have the same perception of the failure or Inconsistent Failures when users have different perceptions of the failure.
 
 The types of failures can be divided into several levels, from the most negligible to the most impactful. The consequences of lesser impact are called benign failure, and those of more significant impact is called catastrophic failure
+
+**Software Dependability Means**
+
+<br>
+
+<div align="center"><img src="img/means-w844-h470.png" width=844 height=470><br><sub>Fig 15 - Means in Dependability - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**Fault Prevention**: Is the prevent the occurrence of faults. Can be attained in three phases of software development. In the requirement phase, very well gathering and documented requirements can avoid ambiguity and mistakes. In the design phase, with the use of design validations like Proof of Concepts and using standards to design the architecture and the component. In the development phase, having good development practices, doing code review, and writing unit testings covering all possibles faults. 
+
+- Improve development process to avoid/minimize faults
+- Use selected technologies (better components, certified software tools, etc. )
+
+**Fault Tolerance techniques**: to provide correct service in presence of faults. Can be attained when the software delivers its correct service even in the presence of an active fault or when an error is detected, and the system can recover. In fault tolerance, the core business of the software has to be available, preventing a total loss of the functionalities, which can be achieved by using fault tolerance techniques like graceful degradation.
+
+- Triple modular redundancy, N-Version programming, check pointing and recovery
+
+**Fault Removal techniques**: specific techniques to reduce the presence of faults (number, seriousness, ...). Can be attained in the development phase and consists of a process that verifies the fault by detecting and eliminating it. This process consists of verification and validations techniques, using test cases, cross-verification, continuous integration and testing.
+
+- Development: regression and non-regression testing, static and dynamic verification, etc
+- Operation: preventive maintenance such as patches, updates, SW rejuvenation, etc.
+
+**Fault Forecasting techniques**: to estimate the present number, the future incidence, and the consequences of faults. Can be attained using models to predict potential faults in the system. It uses static models or historical data to predict faults in some module or component that had fault occurrence.
+
+- Probabilistic assessment, modeling, operational evaluation,…
 
 #### <a name="chapter2part2"></a>Chapter 2 - Part 2: Defect Prevention and Defect Removal
 
