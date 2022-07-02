@@ -28,9 +28,9 @@
     - [Chapter 5 - Part 4: Contract-Based Specification](#chapter5part4)
 6. [Chapter 6: Certification](#chapter6)
     - [Chapter 6 - Part 1: CMMI (Capability Maturity Model Integration)](#chapter6part1)
-    - [Chapter 6 - Part 2: Measuring and estimating software quality](#chapter6part2)
-    - [Chapter 6 - Part 3: Verification and validation (including non-code artifacts)](#chapter6part3)
-    - [Chapter 6 - Part 4: Quality assurance](#chapter6part4)
+    - [Chapter 6 - Part 2: Measuring and Estimating Software Quality](#chapter6part2)
+    - [Chapter 6 - Part 3: Verification and Validation (including non-code artifacts)](#chapter6part3)
+    - [Chapter 6 - Part 4: Quality Assurance](#chapter6part4)
 7. [Chapter 7: Software Dependability and Security Evaluation](#chapter7)
     - [Chapter 7 - Part 1: Software Dependability and Security Evaluation](#chapter7part1)
 8. [Bibliography's](#biblio)
@@ -60,3 +60,52 @@
 #### <a name="chapter3part3"></a>Chapter 3 - Part 3: Formal Methods for Specification and Verification
 
 #### <a name="chapter3part4"></a>Chapter 3 - Part 4: Model checking
+
+## <a name="chapter4"></a>Chapter 4: Software Testing (Dynamic)
+
+#### <a name="chapter4part1"></a>Chapter 4 - Part 1: Unit Testing, Integration Testing, and System Testing
+
+#### <a name="chapter4part2"></a>Chapter 4 - Part 2: Black-box and White-box Testing
+
+#### <a name="chapter4part3"></a>Chapter 4 - Part 3: Model-based Testing
+
+#### <a name="chapter4part4"></a>Chapter 4 - Part 4: Coverage Criteria
+
+#### <a name="chapter4part5"></a>Chapter 4 - Part 5: Testing Parallel and Distributed Systems
+
+#### <a name="chapter4part6"></a>Chapter 4 - Part 6: Regression Testing
+
+#### <a name="chapter4part7"></a>Chapter 4 - Part 7: Defect tracking and ODC
+
+## <a name="chapter5"></a>Chapter 5: Development Models and Standards
+
+#### <a name="chapter5part1"></a>Chapter 5 - Part 1: Software Life Cycle Processes
+
+#### <a name="chapter5part2"></a>Chapter 5 - Part 2: Software Product Quality
+
+#### <a name="chapter5part3"></a>Chapter 5 - Part 3: Test-Driven Development
+
+#### <a name="chapter5part4"></a>Chapter 5 - Part 4: Contract-Based Specification
+
+## <a name="chapter6"></a>Chapter 6: Development Models and Standards
+
+#### <a name="chapter6part1"></a>Chapter 6 - Part 1: CMMI (Capability Maturity Model Integration)
+
+#### <a name="chapter6part2"></a>Chapter 6 - Part 2: Measuring and Estimating Software Quality
+
+#### <a name="chapter6part3"></a>Chapter 6 - Part 3: Verification and Validation (including non-code artifacts)
+
+#### <a name="chapter6part4"></a>Chapter 6 - Part 4: Quality Assurance
+
+## <a name="chapter7"></a>Chapter 7: Software Dependability and Security Evaluation
+
+#### <a name="chapter7part1"></a>Chapter 7 - Part 1: Software Dependability and Security Evaluation
+
+# Bibliography's <a name="biblio"></a>
+
+Some of references that I use.
+
+1. [Systems Engineering Body of Knowledge][sebok-url]
+2. [Software Engineering - Computer Notes][swcomputernotes-url]
+3. [Software Engineering - Geeks for Geeks][swgeeks-url]
+4. [Software Engineering - Java T Point][swjavatpoint-url]
