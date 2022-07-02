@@ -382,6 +382,26 @@ Related to general system engineering techniques (design methodologies, construc
 
 #### <a name="chapter2part2"></a>Chapter 2 - Part 2: Software Dependability Techniques
 
+<br>
+
+<div align="center"><img src="img/faulttolerant-w573-h289.png" width=844 height=470><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**fault tolerance** = Ability of the system to deliver a correct service after the occurrence of faults.
+
+- **Why fault tolerance techniques?**
+    Even with the most careful fault avoidance, faults will eventually occur and may result in a system failure
+- **Fault tolerance techniques:**
+    Carried out via error detection and system recovery, and use redundancy to counteract the effects of faults
+- **Protective redundancy:**
+    Additional components or processes that mask or correct errors or faults inside a system so they do not become observable failures in its service
+    
+<br>
+
+<div align="center"><img src="img/faulttolerant2-w918-h589.png" width=918 height=589><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
 
 ## <a name="chapter3"></a>Chapter 3: Analysis and Formal Methods (Static)
 
