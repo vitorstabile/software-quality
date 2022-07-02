@@ -91,13 +91,19 @@ Non-Functional view of a software, is the quality attribute os a software system
 
 Define constraints (or goals) on how the system will do so. Include basically everything that is not related to the functional aspects of the software system
 
-<br>
-
-<div align="center"><img src="img/abstraction-w569-h440.png" width=569 height=440><br><sub>Fig 11 - The Four Levels of Abstraction - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
-
-<br>
-
 #### <a name="chapter1part3"></a>Chapter 1 - Part 3: Software Quality Economics
+
+**Most common quality attributes**
+
+<br>
+
+<div align="center"><img src="img/availability-w504-h285.png" width=504 height=285><br><sub>Fig 1 - Availability - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+
+
+
 
 ## <a name="chapter2"></a>Chapter 2: Software Dependability
 
