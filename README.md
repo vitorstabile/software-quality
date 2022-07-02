@@ -3,7 +3,7 @@
 1. [Chapter 1: Fundamentals of Software Quality](#chapter1)
     - [Chapter 1 - Part 1: Concepts and Terminology](#chapter1part1)
     - [Chapter 1 - Part 2: Functional and Non-Functional Quality](#chapter1part2)
-    - [Chapter 1 - Part 3: Software Quality Economics](#chapter1part3)
+    - [Chapter 1 - Part 3: Software Quality Attributes](#chapter1part3)
 2. [Chapter 2: Software Dependability](#chapter2)
     - [Chapter 2 - Part 1: Attributes, Threats, and Means](#chapter2part1)
     - [Chapter 2 - Part 2: Defect Prevention and Defect Removal](#chapter2part2)
@@ -91,7 +91,7 @@ Non-Functional view of a software, is the quality attribute os a software system
 
 Define constraints (or goals) on how the system will do so. Include basically everything that is not related to the functional aspects of the software system
 
-#### <a name="chapter1part3"></a>Chapter 1 - Part 3: Software Quality Economics
+#### <a name="chapter1part3"></a>Chapter 1 - Part 3: Software Quality Attributes
 
 This quality attributes make sense at system level, not just at program/application level. Depend on both, software and hardware and architectural design choices and
 configuration choices.
@@ -130,7 +130,41 @@ configuration choices.
 
 <br>
 
+**Exam Question: Explain why availability is an attribute of security. Give examples.**
 
+Security: is a composite of three properties: **Confidentiality**, **Integrity** and **Availability**
+
+<br>
+
+<div align="center"><img src="img/cia-w300-h259.png" width=300 height=259><br><sub>Fig 9 - Security Quality Attribute - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**Confidentiality in cyber security**
+
+When doing business with clients and prospects, it is common to collect and store their personal information. Names, email addresses and phone numbers are a few examples of personal information. This is sensitive data that your company is responsible for protecting and securing. Relying and trusting your cloud or CRM provider is not enough. Your business needs to enforce extra security measures to ensure that your clients and prospects’ privacy is safeguarded.
+
+Protecting confidentiality can start from defining and controlling access levels of information internally and externally. For example, those who work in the IT department that typically don’t interact with clients and prospects, should not have access to client information. If someone does not need a type of information to perform their work, then they should not have access to that information.
+
+When data accessibility is limited, you significantly lower the chances of having information being leaked accidentally or intentionally.
+
+Examples of confidentiality risks include data breaches caused by criminals, insiders inappropriately accessing and/or sharing information, accidental distribution of sensitive information to too wide of an audience.
+
+**Integrity in cyber security**
+
+Integrity means that data or information in your system is maintained so that it is not modified or deleted by unauthorized parties. This is an important element of data hygiene, reliability and accuracy.
+
+To reserve data integrity, the easiest methods are backing up your data, using access controls, monitoring your audit trail and encrypting your data.
+
+Examples of attacks on integrity include email fraud attacks (which compromise the integrity of communications), financial fraud and embezzlement through modification of financial records, even attacks like Stuxnet that impacted the integrity of industrial control systems data flows to cause physical damage.
+
+**Availability in cyber security**
+
+The final component of the CIA Triad is availability. It means that systems and data are available to individuals when they need it under any circumstances, including power outages or natural disasters. Without availability, even if you have met the other two requirements of the CIA Triad, your business can be negatively impacted.
+
+To ensure availability, your organization can use redundant networks, servers and applications. These can be programmed to become available when the primary system is broken down. Besides having backups, the design of IT architecture plays a key role as well. For instance, if high availability is a component of your IT systems, then you could maintain a certain level of operational performance for an extended period of time even in unexpected circumstances.
+
+Examples of attacks on availability include Denial of Service attacks, Ransomware (which encrypts system data and files so they are not accessible to legitimate users), even swatting attacks which can interrupt business operations.
 
 ## <a name="chapter2"></a>Chapter 2: Software Dependability
 
