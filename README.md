@@ -170,6 +170,26 @@ Examples of attacks on availability include Denial of Service attacks, Ransomwar
 
 #### <a name="chapter2part1"></a>Chapter 2 - Part 1: Attributes, Threats, and Means
 
+**What is Software Dependability?**
+
+Dependability is a term proposed in 1995 by Jean-Claude Laprie to reflect the user’s confidence and degree of trust to use a software system, covering some attributes like availability, reliability, safety, confidentiality, integrity, and maintainability. Systems that are not dependable, in other words, unsafe, insecure, and unreliable, tend to be rejected by the user because they are not safe enough.
+
+Depending on the software type, dependability is an important attribute. In Critical Systems, dependability is the most crucial property because a system’s failure may result in injury, damage, or economic losses to the environment and/or people. Examples of critical systems:
+
+- Embedded systems in medical devices (safety-critical).
+
+- Spacecraft navigation systems (mission-critical).
+
+- Online money transfer systems (business critical).
+
+Dependable software needs to be secure, and for this, it is essential to have good coverage of tests to detect, prevent, or remove all possible failures. The more dependable the software is, the more expensive it is because better and more intensive tests have to be applied.
+
+<br>
+
+<div align="center"><img src="img/dependability-w433-h378.png" width=433 height=378><br><sub>Fig 10 - Cost/dependability curve - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 #### <a name="chapter2part2"></a>Chapter 2 - Part 2: Defect Prevention and Defect Removal
 
 #### <a name="chapter2part3"></a>Chapter 2 - Part 3: Software Dependability Techniques
