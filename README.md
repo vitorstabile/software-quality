@@ -39,6 +39,12 @@
 
 #### <a name="chapter1part1"></a>Chapter 1 - Part 1: Concepts and Terminology
 
+<br>
+
+<div align="center"><img src="img/abstraction-w569-h440.png" width=569 height=440><br><sub>Fig 11 - The Four Levels of Abstraction - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 #### <a name="chapter1part2"></a>Chapter 1 - Part 2: Functional and Non-Functional Quality
 
 #### <a name="chapter1part3"></a>Chapter 1 - Part 3: Software Quality Economics
