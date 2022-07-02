@@ -170,6 +170,12 @@ Examples of attacks on availability include Denial of Service attacks, Ransomwar
 
 #### <a name="chapter2part1"></a>Chapter 2 - Part 1: Attributes, Threats, and Means
 
+<br>
+
+<div align="center"><img src="img/dependability2-w786-h611.png" width=786 height=611><br><sub>Fig 10 - Software Dependability Taxonomy - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 **What is Software Dependability?**
 
 Dependability is a term proposed in 1995 by Jean-Claude Laprie to reflect the user’s confidence and degree of trust to use a software system, covering some attributes like availability, reliability, safety, confidentiality, integrity, and maintainability. Systems that are not dependable, in other words, unsafe, insecure, and unreliable, tend to be rejected by the user because they are not safe enough.
@@ -186,7 +192,7 @@ Dependable software needs to be secure, and for this, it is essential to have go
 
 <br>
 
-<div align="center"><img src="img/dependability-w433-h378.png" width=433 height=378><br><sub>Fig 10 - Cost/dependability curve - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+<div align="center"><img src="img/dependability-w433-h378.png" width=433 height=378><br><sub>Fig 11 - Cost/dependability curve - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
 
 <br>
 
