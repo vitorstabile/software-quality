@@ -207,7 +207,28 @@ Dependable software needs to be secure, and for this, it is essential to have go
 
 **Robustness**
 
+The degree to which a system or component can function correctly in the presence of invalid inputs or stressful environmental conditions.
+
+Robustness is used very often to test software interfaces such as system calls, APIs, web services, etc. This is called **robustness testing**
+
+Robustness is defined informally as: “dependability with respect to erroneous input”
+
 **Resilience**
+
+The persistence of dependability when facing changes = dependability + Robustness
+
+That is, changes include all sort of upsets:
+
+- Hardware and software faults
+- Malicious attacks
+- Configuration changes
+- Software and hardware upgrades
+
+Resilience is related to robustness in that the key is unforeseen changes: The changes apply to robustness in inputs and environmental conditions, and more generally to resilience in terms of any changes that affects the service delivery of the system.
+
+**Exam Question: If a web service crashes when called with a give combination of valid inputs, can you claim that the web service is not robust? Explain.**
+
+
 
 #### <a name="chapter2part2"></a>Chapter 2 - Part 2: Defect Prevention and Defect Removal
 
