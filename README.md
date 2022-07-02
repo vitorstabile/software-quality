@@ -93,7 +93,8 @@ Define constraints (or goals) on how the system will do so. Include basically ev
 
 #### <a name="chapter1part3"></a>Chapter 1 - Part 3: Software Quality Economics
 
-**Most common quality attributes**
+This quality attributes make sense at system level, not just at program/application level. Depend on both, software and hardware and architectural design choices and
+configuration choices.
 
 <br>
 
@@ -101,7 +102,33 @@ Define constraints (or goals) on how the system will do so. Include basically ev
 
 <br>
 
+<div align="center"><img src="img/reliability-w514-h203.png" width=514 height=203><br><sub>Fig 2 - Reliability - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
 
+<br>
+
+<div align="center"><img src="img/security-w510-h369.png" width=510 height=369><br><sub>Fig 3 - Security - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/performance-w525-h361.png" width=525 height=361><br><sub>Fig 4 - Performance - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/usability-w527-h412.png" width=527 height=412><br><sub>Fig 5 - Usability - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/maintainability-w495-h215.png" width=495 height=215><br><sub>Fig 6 - Maintainability - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/manageability-w490-h256.png" width=490 height=256><br><sub>Fig 7 - Manageability - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cost-w516-h301.png" width=516 height=301><br><sub>Fig 8 - Cost - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
 
 
 
