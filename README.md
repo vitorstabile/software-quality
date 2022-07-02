@@ -39,6 +39,12 @@
 
 #### <a name="chapter1part1"></a>Chapter 1 - Part 1: Concepts and Terminology
 
+**Software Quality– A Definition**
+
+Software quality is the degree to which a software product meets established requirements; however, quality depends upon the degree to which established requirements accurately represent stakeholder needs, wants, and expectations.
+
+Two aspects of software quality are presented in the above definition: one is meeting the requirements, while the other is generating customer/stakeholder satisfaction. A high quality software product is expected to meet all written development requirements – whether defined fully before the development began, or later in the course of the development process – and to meet the relevant regulations and professional conventions. Quality is also achieved through fulfillment of stakeholder needs and wants.
+
 <br>
 
 <div align="center"><img src="img/abstraction-w569-h440.png" width=569 height=440><br><sub>Fig 11 - The Four Levels of Abstraction - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
@@ -112,13 +118,17 @@
 Some of references that I use.
 
 1. [Systems Engineering Body of Knowledge][sebok-url]
-2. [Software Engineering - Computer Notes][swcomputernotes-url]
-3. [Software Engineering - Geeks for Geeks][swgeeks-url]
-4. [Software Engineering - Java T Point][swjavatpoint-url]
+2. [Software Quality][sqa-url]
+3. [Software Quality Assurance][sqaa-url]
+4. [Software Engineering - Computer Notes][swcomputernotes-url]
+5. [Software Engineering - Geeks for Geeks][swgeeks-url]
+6. [Software Engineering - Java T Point][swjavatpoint-url]
 
 <!-- URL's -->
 
 [sebok-url]:https://www.sebokwiki.org/wiki/Guide_to_the_Systems_Engineering_Body_of_Knowledge_(SEBoK)
+[sqa-url]: https://nibmehub.com/opac-service/pdf/read/Software%20quality%20%20concepts%20and%20practice.pdf
+[sqaa-url]: http://desy.lecturer.pens.ac.id/Manajemen%20Kualitas%20Perangkat%20Lunak/ebook/Software%20Quality%20Assurance%20From%20Theory%20to%20Implementation.pdf
 [swcomputernotes-url]: https://ecomputernotes.com/software-engineering
 [swgeeks-url]: https://www.geeksforgeeks.org/software-engineering/?ref=lbp
 [swjavatpoint-url]: https://www.javatpoint.com/software-engineering-tutorial
