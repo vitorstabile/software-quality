@@ -71,14 +71,31 @@ The software product components are:
 
 - **Data necessary for operating the software system**: The required data include lists of codes and parameters, and also standard test data. The purpose of the standard test data is to ascertain that no undesirable changes in the code or software data have occurred during bug corrections and other software maintenance activities, and to support the detection of causes for any malfunctioning.
 
+#### <a name="chapter1part2"></a>Chapter 1 - Part 2: Functional and Non-Functional Quality
+
+In software engineering the functional versus non-functional view appears at the requirements level. That is, appear at the very beginning of the development process
+
+**Functional view**
+
+The Functional view of a software, is what the software system does. In this view, quality is related to match between the functionalities and the user needs and/expectations
+
+**Functional requirements**
+
+Describes what a software system should do. Function points is a usual metric to characterize and assess the size of the software
+
+**Non-Functional view**
+
+Non-Functional view of a software, is the quality attribute os a software system and is how the software system does it. Most of them cannot be measured directly
+
+**Non-functional requirements**
+
+Define constraints (or goals) on how the system will do so. Include basically everything that is not related to the functional aspects of the software system
 
 <br>
 
 <div align="center"><img src="img/abstraction-w569-h440.png" width=569 height=440><br><sub>Fig 11 - The Four Levels of Abstraction - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
 
 <br>
-
-#### <a name="chapter1part2"></a>Chapter 1 - Part 2: Functional and Non-Functional Quality
 
 #### <a name="chapter1part3"></a>Chapter 1 - Part 3: Software Quality Economics
 
