@@ -6,8 +6,7 @@
     - [Chapter 1 - Part 3: Software Quality Attributes](#chapter1part3)
 2. [Chapter 2: Software Dependability](#chapter2)
     - [Chapter 2 - Part 1: Attributes, Threats, and Means](#chapter2part1)
-    - [Chapter 2 - Part 2: Defect Prevention and Defect Removal](#chapter2part2)
-    - [Chapter 2 - Part 2: Software Dependability Techniques](#chapter2part3)
+    - [Chapter 2 - Part 2: Software Dependability Techniques](#chapter2part2)
 3. [Chapter 3: Analysis and Formal Methods (Static)](#chapter3)
     - [Chapter 3 - Part 1: Inspections, Reviews, and Audits](#chapter3part1)
     - [Chapter 3 - Part 2: Automated Static Analysis](#chapter3part2)
@@ -353,7 +352,12 @@ The types of failures can be divided into several levels, from the most negligib
 
 **Fault Prevention**: Is the prevent the occurrence of faults. Can be attained in three phases of software development. In the requirement phase, very well gathering and documented requirements can avoid ambiguity and mistakes. In the design phase, with the use of design validations like Proof of Concepts and using standards to design the architecture and the component. In the development phase, having good development practices, doing code review, and writing unit testings covering all possibles faults. 
 
-- Improve development process to avoid/minimize faults
+Fault prevention techniques intended to keep faults out of the system. Applied at the design stage
+Related to general system engineering techniques (design methodologies, construction rules, use of high reliable components). Include:
+
+- Rigid software development process
+- Formal methods
+- Improve development process to avoid/minimize faults Ex: V-model
 - Use selected technologies (better components, certified software tools, etc. )
 
 **Fault Tolerance techniques**: to provide correct service in presence of faults. Can be attained when the software delivers its correct service even in the presence of an active fault or when an error is detected, and the system can recover. In fault tolerance, the core business of the software has to be available, preventing a total loss of the functionalities, which can be achieved by using fault tolerance techniques like graceful degradation.
@@ -369,9 +373,7 @@ The types of failures can be divided into several levels, from the most negligib
 
 - Probabilistic assessment, modeling, operational evaluation,…
 
-#### <a name="chapter2part2"></a>Chapter 2 - Part 2: Defect Prevention and Defect Removal
-
-#### <a name="chapter2part3"></a>Chapter 2 - Part 3: Software Dependability Techniques
+#### <a name="chapter2part2"></a>Chapter 2 - Part 2: Software Dependability Techniques
 
 ## <a name="chapter3"></a>Chapter 3: Analysis and Formal Methods (Static)
 
