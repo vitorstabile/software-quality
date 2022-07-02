@@ -242,6 +242,20 @@ Resilience is related to robustness in that the key is unforeseen changes: The c
 
 **Failure**: The inability of a system or component to perform a required function according to its specifications
 
+<br>
+
+<div align="center"><img src="img/fault4-w407-h142.png" width=407 height=142><br><sub>Fig 12 - Failure/Restoration - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**Correct service**: is delivered when the service implements the expected system function.
+
+**Service failure**:is an event that occurs when the delivered service deviates from correct service
+
+**Failure**: is a transition from correct service to incorrect service
+
+**Restoration**: the transition from incorrect service to correct service.
+
 **Classification of faults**
 
 Caused by what?
