@@ -196,6 +196,19 @@ Dependable software needs to be secure, and for this, it is essential to have go
 
 <br>
 
+**Software Dependability Attributes**
+
+- **Availability**: The probability of a system being available and delivering services to users at a given time;
+- **Reliability**: The ability of a system to continuously deliver services as expected by the user under predefined conditions;
+- **Safety**: The ability of a system to protect against damage.
+- **Confidentiality**: The ability of the system to be private and not give access for no-authorized;
+- **Integrity**: The ability of a system against improper information modification or destruction;
+- **Maintainability**: The ability of a system to be modified effectively and efficiently by the maintainers.
+
+**Robustness**
+
+**Resilience**
+
 #### <a name="chapter2part2"></a>Chapter 2 - Part 2: Defect Prevention and Defect Removal
 
 #### <a name="chapter2part3"></a>Chapter 2 - Part 3: Software Dependability Techniques
