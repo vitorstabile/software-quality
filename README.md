@@ -834,6 +834,26 @@ Three primitives:
 
 <br>
 
+**Data flow graph**
+
+- A data flow graph is a directed graph constructed as follows.
+    - A sequence of definitions and c-uses is associated with each node of the graph.
+    - A set of p-uses is associated with each edge of the graph.
+    - The entry node has a definition of each edge parameter and each nonlocal variable used in the program.
+    - The exit node has an undefinition of each local variable.
+
+Key rules to generate the graph:
+    - A sequence of definitions and c-uses is associated with each node of the graph.
+    - A set of p-uses is associated with each edge of the graph.
+    
+<br>
+
+<div align="center"><img src="img/dataflow4-w732-h494.png" width=732 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+
+
 #### <a name="chapter4part5"></a>Chapter 4 - Part 5: Black-box: Equivalence Classes
 
 #### <a name="chapter4part6"></a>Chapter 4 - Part 6:  Black-box: Boundary Value Analysis
