@@ -1056,7 +1056,7 @@ Key rules to generate the graph:
 
 <br>
 
-#### <a name="chapter4par8"></a>Chapter 4 - Part 8: Model-based Testing
+#### <a name="chapter4part8"></a>Chapter 4 - Part 8: Model-based Testing
 
 <br>
 
