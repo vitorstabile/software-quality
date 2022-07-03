@@ -717,6 +717,16 @@ Three primitives:
         - A basic block has one entry and one exit.
         - A program does not jump into or out of a basic block.
 
+<br>
+
+<div align="center"><img src="img/cfg-w808-h332.jpg" width=808 height=332><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg2-w1498-h1196.png" width=1498 height=1196><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 #### <a name="chapter4part4"></a>Chapter 4 - Part 4: White-box: Data flow testing
 
 #### <a name="chapter4part5"></a>Chapter 4 - Part 5: Black-box: Equivalence Classes
