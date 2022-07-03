@@ -429,6 +429,69 @@ Related to general system engineering techniques (design methodologies, construc
 
 <br>
 
+**Passive technique vs Active technique**
+
+- Passive: Use error masking to hide the occurrence of faults
+- Active: duplication with comparison scheme
+
+<br>
+
+<div align="center"><img src="img/hwr2-w658-h508.png" width=658 height=508><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/hwr-w691-h486.png" width=691 height=486><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**Passive hardware redundancy** -> TMR - Triple Modular Redundancy
+
+- Use error masking to hide the occurrence of faults
+- Rely upon voting mechanisms to mask the occurrence of faults
+- Do not require any action on the part of the system / operator
+- Generally do not provide for the detection of faults
+- Can be applied at any level: computers, processors, memories, general circuitry
+
+- Voter is critical
+  - Single point of failure. Can be partially replicated… but the very end is a single point of failur
+  - Difficulties in replica synchronization
+  - Can be implemented in HW or in SW
+
+<br>
+
+<div align="center"><img src="img/hwr3-w748-h569.png" width=748 height=569><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**Active hardware redundancy** -> DMR – Dual Modular Redundancy
+
+- duplication with comparison scheme
+- Two identical pieces of HW are employed
+- They perform the same computation in parallel
+- When a failure occurs, the two copies are no more identical and a simple comparison detects the errors
+- No method for determining which component is faulty
+- Can be applied at any level: computers, processors,…
+
+<br>
+
+<div align="center"><img src="img/hwr4-w736-h570.png" width=736 height=570><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**Active hardware redundancy** -> Standby sparing technique
+
+- One module is operational, while one or more modules serve as standbys or spares
+- When a fault is detected and located, the faulty module is removed and replaced with one of the spares
+- Hot standby sparing: the spares operate in synchrony with the on line modules, and they are prepared to take over at any time
+- Cold standby sparing: the spares are unpowered until needed to replace a faulty module
+- Power consumption vs time to perform initialization prior to bringing the module into active service
+
+<br>
+
+<div align="center"><img src="img/hwr5-w748-h284.png" width=748 height=284><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 **Software redundancy techniques**
 
 Two Ways: 
