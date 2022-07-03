@@ -497,6 +497,17 @@ Examples: **Data consistency**: check the range of variables, input parameters, 
 
 The idea is a dynamic approache to running the code to test it
 
+Software testing is a critical element of software quality assurance and represents the ultimate review of:
+    – specification;
+    – design;
+    – coding.
+    
+Software life-cycle models (e.g., waterfall) frequently include software testing as a separate phase that follows implementation
+
+Contrary to some life-cycle models, testing is an activity that must be carried out throughout the life-cycle.
+
+It is not enough to test the end product of each phase. Ideally, testing occurs during each phase.
+
 **Testing phases**
 
 - **Unit testing** = Test of individual units of source code. The definition of “unit” for test purposes depends on the actual software. It is done by the programmer most of the times
@@ -520,8 +531,52 @@ The idea is a dynamic approache to running the code to test it
     - Security: verify that protection mechanisms built into a system will, in fact, protect it from improper penetration
     - Dependability: operate the system for long periods of time and estimate the likelihood that the the requirements for failure rates, mean-time-between-failures, and so on, will be satisfied. -> Very Dificult
     - Specific non-functional elements: Error detection, Intrusion detection, Checkpointing, Logging, Recovery
+
+**Elements of Testing**
+
+- **Test case**: inputs to test the program and the predicted outcomes (according to the specification). Test cases are formal procedures:
+    - inputs are prepared;
+    - outcomes are predicted;
+    - tests are documented;
+    - commands are executed;
+    - results are observed and evaluated.
+
+- **Test suite**: A collection of test cases
+
+- **Testing oracle**: A mechanism (a program, process, or set of data) that helps us determine whether the program produced the correct outcome or not.
+
+- **Outcome**: What we expect to happen as a results of the test. In practice, outcome and output may not be the same.
+    - Example: if the screen did not change as a result of a test that is a tangible outcome although there is no output.
+    - In testing we are concerned with outcomes, not just outputs.
+
+    - Some times, specifying the expected outcome for a given test case can be quite difficult:
+        - For some applications we might not know what the outcome should be.
+        - For other applications the developer might have a misconception.
+        - Or the program may produced too much output to be able to analyze it in a reasonable amount of time.
     
+    - In general, this is a fragile part of the testing activity, and can be very time consuming.
     
+    - When possible, automation should be considered as a way of specifying the expected outcome, and comparing it to the actual outcome.
+
+- **Question**: When does a test “succeed”? When does a test “fail”?
+    - A successful test is a test that discovers one or more faults.
+
+**Coincidental correctness**: A program is said to be coincidentally correct if the test results in the expected outcome, even though the program performs the incorrect computation.
+    - Example: A program calculates y = x2. It is incorrectly programmed as y = 2x, and it is tested with the input value x = 2.
+
+
+    
+**Software testing axioms**
+       
+    - 1 It is impossible to test a program completely.
+    - 2 Software testing is a risk-based exercise.
+    - 3 Testing cannot show the absence of bugs.
+    - 4 The more bugs you find, the more bugs there are.
+    - 5 Not all bugs found will be fixed.
+    - 6 It is difficult to say when a bug is indeed a bug.
+    - 7 Specifications are never final.
+    - 8 Software testers are not the most popular members of a project.
+    - 9 Software testing is a disciplined and technical profession
 
 
 #### <a name="chapter4part2"></a>Chapter 4 - Part 2: Black-box and White-box Testing
