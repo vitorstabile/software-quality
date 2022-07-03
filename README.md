@@ -495,6 +495,35 @@ Examples: **Data consistency**: check the range of variables, input parameters, 
 
 #### <a name="chapter4part1"></a>Chapter 4 - Part 1: Unit Testing, Integration Testing, and System Testing
 
+The idea is a dynamic approache to running the code to test it
+
+**Testing phases**
+
+- **Unit testing** = Test of individual units of source code. The definition of “unit” for test purposes depends on the actual software. It is done by the programmer most of the times
+
+- **Integration testing** = Units are combined and tested as a whole. Typically black-box testing.
+
+- **System testing (and Alpha testing)** = The testing team plays the role of end-users. The test is executed in the developers’ site.
+
+- **Beta testing** = A beta version of the software is released to be used by external users (beta testers).
+
+- **Acceptance testing** = Determined by contract. Confirms that the solution works for the customer
+
+**Types of Testing**
+
+- **Functional**
+
+- **Non-functional**:
+    - Performance: test the run-time performance of the software.
+    - Stress: execute a system in a manner that demands resources in abnormal quantity, frequency, or volume.
+    - Usability: attempt to identify discrepancies between the user interfaces of a product and the human engineering requirements of its potential users
+    - Security: verify that protection mechanisms built into a system will, in fact, protect it from improper penetration
+    - Dependability: operate the system for long periods of time and estimate the likelihood that the the requirements for failure rates, mean-time-between-failures, and so on, will be satisfied. -> Very Dificult
+    - Specific non-functional elements: Error detection, Intrusion detection, Checkpointing, Logging, Recovery
+    
+    
+
+
 #### <a name="chapter4part2"></a>Chapter 4 - Part 2: Black-box and White-box Testing
 
 #### <a name="chapter4part3"></a>Chapter 4 - Part 3: Model-based Testing
