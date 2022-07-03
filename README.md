@@ -795,6 +795,45 @@ Three primitives:
 
 #### <a name="chapter4part4"></a>Chapter 4 - Part 4: White-box: Data flow testing
 
+- **Data flow testing**: perform a number of tests defined according to data values. These tests are known as data flow testing. There are several (data flow) strategies to decide the tests to be applied to the program/system under test. Execution of certain kinds of paths to uncover anomalies in the flow of data in program variables.
+- Can be Static or Dynamic
+
+<br>
+
+<div align="center"><img src="img/dataflow-w730-h494.png" width=730 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/dataflow2-w730-h494.png" width=730 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+- Data flow anomalies are detected using program instrumentation
+    - Insert extra code to monitor the states of variables.
+    - If the state sequence contains dd, unr, or dun sequence, a data flow anomaly is detected.
+    - Need tools to do that efficiently (and without major risks of inserting unintended bugs).
+
+- What to do after detecting a data flow anomaly?
+    - Investigate the cause of the anomaly.
+    - To fix an anomaly, the code must be returned to the developers to modify the existing code in order to remove the anomaly.
+
+**Occurrences of variables**
+
+- **Definition**: a variable gets a new value
+    - i = x; /* The variable i gets a new value x. */
+- **Undefinition or kill**: occurs if the value and the location become unbound (memory location released).
+    - Computation use (c-use)
+        - Example: x = 2*y; /* y has been used to compute a value of x. */
+    - Predicate use (p-use)
+        - Example: if (y > 100) { …} /* y has been used in a condition. */
+- **Use**: occurs when the value is fetched from the memory location of the variable. There are two forms of uses of a variable.
+
+<br>
+
+<div align="center"><img src="img/dataflow3-w769-h540.png" width=769 height=540><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 #### <a name="chapter4part5"></a>Chapter 4 - Part 5: Black-box: Equivalence Classes
 
 #### <a name="chapter4part6"></a>Chapter 4 - Part 6:  Black-box: Boundary Value Analysis
