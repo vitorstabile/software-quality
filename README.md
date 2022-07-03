@@ -492,6 +492,21 @@ Related to general system engineering techniques (design methodologies, construc
 
 <br>
 
+**Active hardware redundancy** -> Pair-and-a-spare approach
+
+- Two modules operate in parallel at all times and their results are compared to provide the error detection capability
+- Reconfiguration process can be viewed as a switch that accepts the module’s outputs and error reports, and provides the comparator with the output of two modules.
+- As long as the two outputs agree, the spares are not used. When a miscompare occurs, the switch uses the error reports from the modules to first identify the faulty module and then select a replacement module. Both modules are replaced if the faulty module is not identified
+- Hybrid approaches that combine passive and active HW redundancy
+- Active approaches that combine HW and SW redundancy
+- Many implementations strategies
+
+<br>
+
+<div align="center"><img src="img/hwr6-w742-h275.png" width=742 height=275><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 **Software redundancy techniques**
 
 Two Ways: 
