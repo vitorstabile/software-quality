@@ -577,7 +577,50 @@ It is not enough to test the end product of each phase. Ideally, testing occurs 
     - 7 Specifications are never final.
     - 8 Software testers are not the most popular members of a project.
     - 9 Software testing is a disciplined and technical profession
+    
+ When modifying existing code to either correct an existing problem or otherwise enhance the program. For this, we need **Retest** or **Regression test**
+ 
+ - **Retest**: test to verify that a corrected bug was effectively corrected
+ - **Regression test**: retest to verify if other code (i.e., not the one that has been modified) still works after the modifications introduced to correct a bug or to add new functionalities..
 
+**Limitations of testing**
+
+- Testing cannot occur until after the code is written.
+- The problem is big!
+- Exhaustive testing is not practical even for the simplest programs.
+- Even if we “exhaustively” test all execution paths of a program, we cannot guarantee its correctness. The best we can do is increase our confidence!
+- “Testing can show the presence of bug, not their absence.” Dijkstra
+- Testers do not have immunity to bugs.
+- Even the slightest modifications – after a program has been tested – invalidate (some or even all of) our previous testing efforts.
+- Lack of testing tools
+
+**Testing versus debugging**
+
+- The **purpose of testing** is to show that a program has bugs.
+- The **purpose of debugging** is to find the faults that led to the program failure and to design and implement the program changes that correct the faults.
+- Testing is a demonstration of failure or apparent correctness.
+- Debugging is a deductive process
+- Testing can be automated to a large extent
+- Automatic debugging is (still) a dream.
+- Much of testing can be done without design knowledge (by an outsider).
+- Debugging is impossible without detailed design knowledge (by an insider).
+
+**Designer versus tester**
+
+- The more the tester knows about the design, the more likely he will eliminate useless tests (functional differences handled by the same code).
+- Testers that have design knowledge may have the same misconceptions as the designer.
+- Lack of design knowledge may help the tester to develop test cases that a designer would never have thought of.
+- Lack of design knowledge may result in inefficient testing and blindness to missing functions and strange cases.
+
+**Testing priorities**
+
+- Only exhaustive testing can show a program is free from defects. However, exhaustive testing is impossible
+- The problem is to decide what should be tested first or more intensively
+- Some examples
+    - System wide functionalities vs component functionalities
+    - Old functionalities vs new functionalities
+    - Typical situations vs corner cases.
+    - More complex code vs simpler code
 
 #### <a name="chapter4part2"></a>Chapter 4 - Part 2: Black-box and White-box Testing
 
