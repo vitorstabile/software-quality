@@ -638,6 +638,49 @@ It is not enough to test the end product of each phase. Ideally, testing occurs 
 **Black-box (or functional) testing**: testing techniques that use the functional specification as the point of reference for test selection and adequacy. **Class partitioning** and **boundary value analysis**
     - specification-based testing, functional testing
     
+ - Testing software against a specification of its external behavior without knowledge of internal implementation details
+    - Can be applied to software “units” (e.g., classes) or to entire programs
+    - External behavior is defined in functional specs, requirements specs, API docs, etc.
+
+ - As black box testing purposely disregards the program structure, attention is focused primarily on the information domain (i.e., data that goes in, data that comes out)
+
+- Goals:
+    - Derive test cases (sets of input conditions and expected output) that fully exercise the functionality, as seen by an external point of view
+    - Define effective test cases that represent the potentially infinite input space.
+
+- Black box testing tends to find different kinds of errors than white box testing
+    - Missing functionalities
+    - Usability problems
+    - Performance problems
+    - Concurrency and timing errors
+    - Initialization and termination errors
+    
+- Unlike white box testing, black box testing tends to be applied later in the development process
+
+- Inputs:
+    - Individual input values
+        - Try several different values for each individual input (the goal is to select the best ones, since the input domain is normally very large)
+    - Combinations of inputs
+        - Individual inputs are not independent from each other
+        - Programs process multiple input values together, not just one at a time
+        - Try many different combinations of inputs in order to achieve good coverage of the input domain
+    - Ordering and timing of inputs
+        - In addition to the particular combination of input values chosen, the ordering and timing of the inputs can also make a difference
+    - Boolean value
+        - T or F
+    - Numeric value in a particular range
+        - -99 <= N <= 99
+        - Integer, Floating point
+    - One of a fixed set of enumerated values
+        - {Jan, Feb, Mar, …}
+        - {Visa, Master Card, American Express, …}
+    - Formatted strings
+        - Phone numbers
+        - File names
+        - URLs
+        - Credit card numbers
+        - Regular expressions
+    
 **Test coverage: how to measure it?**
 
 Software reliability increse cost, but bugs in system can increase too.
@@ -933,7 +976,51 @@ Key rules to generate the graph:
         
 #### <a name="chapter4part5"></a>Chapter 4 - Part 5: Black-box: Equivalence Classes
 
+- Typically the universe of all possible test cases is too large and we cannot try all of them
+- We have to select a relatively small number of test cases to actually run
+
+- **Equivalence Classes**: Partition the test cases into "equivalence classes”
+    - Each equivalence class contains a set of "equivalent" test cases
+    - Two test cases are considered to be equivalent if we expect the program to process them both in the same way (i.e., follow the same path through the code)
+    - If we expect the program to process two test cases in the same way, we only test one of them
+
+- **Advantages**
+    - As the entire partition is represented in the test cases, it provides a form of completeness
+    - As partitions are disjoint, assures non-redundancy in the test cases.
+    
+- **Disavantages**
+    - Needs knowledge of the input domain (more than just understanding the specifications) and requires understanding on how inputs are mutually dependent
+    - Largely dependent on the skills of the tester and on his/her knowledge of the application domain.
+
+<br>
+
+<div align="center"><img src="img/eq2-w724-h477.png" width=724 height=477><br><sub>Fig 19 - Black-box: Equivalence Classes - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/eq3-w705-h477.png" width=705 height=477><br><sub>Fig 19 - Black-box: Equivalence Classes - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/eq4-w717-h478.png" width=717 height=478><br><sub>Fig 19 - Black-box: Equivalence Classes - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+- Example: string Fetch(URL)
+    - Equivalence Definition 1: partition test cases by URL protocol (“http”, “https”, “ftp”, “file”)
+    - Equivalence Definition 2: partition test cases by type of file being retrieved (HTML, GIF, JPEG, Plain Text)
+    - Equivalence Definition 3: partition test cases by length of URL (very short, short, medium, long, very long)
+
+<br>
+
+<div align="center"><img src="img/eq-w671-h253.png" width=671 height=253><br><sub>Fig 19 - Black-box: Equivalence Classes - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 #### <a name="chapter4part6"></a>Chapter 4 - Part 6:  Black-box: Boundary Value Analysis
+
+- When choosing values from an equivalence class to test, we use the values that are most likely to cause the program to fail
+- 
 
 #### <a name="chapter4part7"></a>Chapter 4 - Part 7: Model-based Testing
 
