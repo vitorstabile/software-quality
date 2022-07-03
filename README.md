@@ -1056,6 +1056,94 @@ Key rules to generate the graph:
 
 <br>
 
+**Ad hoc exploratory testing**: 
+    - Based on intuition, guess what kinds of inputs might cause the program to fail
+    - Create some test cases based on your guesses
+    - Intuition will often lead you toward boundary cases, but not always and, above all, not in a structured way.
+    - Some special cases are not boundary values, but are mishandled by many programs
+        - Try exiting the program while it is still starting up
+        - Try loading a corrupted file
+        - Try strange but legal URLs: hTtP://Www.bYu.EDU/
+        
+**Comparison testing**:
+    - Also called Back-to-Back testing
+    - When having multiple implementations of the same functionality, one can run test inputs through both implementations, and compare the results for equality
+    - Why multiple implementations?
+        - NVersion programming: safety-critical systems sometimes use multiple, independent implementations of critical modules to ensure the reliability of results
+        - Competitor's product, or an earlier version of the product under development
+        - Key functionalities implemented in simulation environments or through specific tools
+     - Inputs may be randomly generated or designed manually
+     
+**Testing for race conditions and other timing dependencies**
+    - Testing for race conditions and other timing dependencies
+        - Operating systems manage concurrent programs, interrupts, etc.
+        - Servers service many clients simultaneously
+        - Applications let users perform multiple concurrent actions
+    - Test a variety of different concurrency scenarios, focusing on activities that are likely to share resources (and therefore conflict)
+    - "Race conditions" are bugs that occur only when concurrent activities interleave in particular ways, thus making them difficult to reproduce
+    - Test on hardware of various speeds to ensure that your system works well on both slower and faster machines
+    
+**Performance testing**
+    - Measure the system performance
+        - Running times of various tasks
+        - Throughput (no. of tasks executed by in a given amount of time)
+        - Response time
+    - Important to exercise:
+        - Memory usage, including memory leaks
+        - Network usage (Does it consume too much bandwidth? Does it open too many connections?)
+        - Disk usage (Is the disk footprint reasonable? Does it clean up temporary files properly?)
+        - Process/thread priorities (Does it play well with other applications, or does it hog the whole machine?)
+        
+ **Limit testing**
+    - Test the system at the limits of normal use
+    - Test every limit on the program behavior defined in the requirements
+        - Maximum number of concurrent users or connections
+        - Maximum number of open files
+        - Maximum request size
+        - Maximum file size
+        - Etc.
+        
+    - What happens when you go slightly beyond the specified limits?
+        - Does the system performance degrade dramatically, or gracefully?
+        
+**Stress testing**
+    - Test the system under extreme conditions (i.e., beyond the limits of normal use)
+    - Create test cases that demand resources in abnormal quantity, frequency, or volume
+        - Low memory conditions
+        - Disk faults (read/write failures, full disk, file corruption, etc.)
+        - Network faults
+        - Unusually high number of requests
+        - Unusually large requests or files
+        - Unusually high data rates (what happens if the network suddenly becomes ten times faster?)
+        
+    - Even if the system does not need to work in such extreme conditions, stress testing is an excellent way to find bugs.
+    
+**Security Testing**
+    - Any system that manages sensitive information or performs sensitive functions may become a target for intrusion (i.e., hackers)
+    - How feasible is it to break into the system?
+    - Learn the techniques used by hackers
+    - Try whatever attacks you can think of
+    - Hire a security expert to break into the system
+    - If somebody broke in, what damage could they do?
+    - If an authorized user became disgruntled, what damage could they do?
+    
+**Usability Testing**
+    - Is the user interface intuitive, easy to use, organized, logical?
+    - Are common tasks simple to do?
+    - Does it conform to platform-specific conventions?
+    - Get real users to sit down and use the software to perform some tasks
+    - Watch them performing the tasks, noting things that seem to give them trouble
+    - Get their feedback on the user interface and any suggested improvements
+    - Report bugs for any problems encountered
+    
+**Recovery testing**
+    - Try turning the power off or otherwise crashing the program at arbitrary points during its execution
+        - Does the program come back up correctly when you restart it?
+        - Was the program persistent data corrupted (files, databases, etc.)?
+        - Was the extent of user data loss within acceptable limits?
+    - Can the program recover if its configuration files have been corrupted or deleted?
+    - What about hardware failures? Does the system need to keep working when its hardware fails? If so, verify that it does so.
+
 #### <a name="chapter4part8"></a>Chapter 4 - Part 8: Model-based Testing
 
 <br>
