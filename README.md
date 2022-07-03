@@ -747,6 +747,52 @@ Three primitives:
 
 <br>
 
+**Paths**: Consider a flow graph G = (N, E). A sequence of k edges, k > 0, (e_1, e_2, … e_k) , denotes a path of length k through the CFG if the following sequence condition holds:
+    Given that np, nq, nr, and ns are nodes belonging to N, and 0 < I < k, if ei = (np, nq) and ei + 1 = (nr, ns) then nq = nr. }
+    
+<br>
+
+<div align="center"><img src="img/cfg8-w848-h456.png" width=848 height=456><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg9-w839-h453.png" width=839 height=453><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg10-w855-h584.png" width=855 height=584><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg11-w859-h543.png" width=859 height=543><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg12-w862-h561.png" width=862 height=561><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg13-w817-h569.png" width=817 height=569><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg14-w804-h480.png" width=804 height=480><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg15-w858-h561.png" width=858 height=561><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg16-w840-h307.png" width=840 height=307><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg17-w840-h532.png" width=840 height=532><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+
 #### <a name="chapter4part4"></a>Chapter 4 - Part 4: White-box: Data flow testing
 
 #### <a name="chapter4part5"></a>Chapter 4 - Part 5: Black-box: Equivalence Classes
