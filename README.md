@@ -1020,7 +1020,20 @@ Key rules to generate the graph:
 #### <a name="chapter4part6"></a>Chapter 4 - Part 6:  Black-box: Boundary Value Analysis
 
 - When choosing values from an equivalence class to test, we use the values that are most likely to cause the program to fail
-- 
+- Errors tend to occur at the boundaries of equivalence classes rather than at the "center”
+- In addition to testing center values, we should also test boundary values
+    - Right on a boundary
+    - Very close to a boundary on either side
+
+<br>
+
+<div align="center"><img src="img/bd-w724-h486.png" width=724 height=486><br><sub>Fig 19 - Black-box: Boundary Value Analysis - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/bd2-w592-h231.png" width=582 height=231><br><sub>Fig 19 - Black-box: Boundary Value Analysis - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
 
 #### <a name="chapter4part7"></a>Chapter 4 - Part 7: Model-based Testing
 
