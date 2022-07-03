@@ -629,10 +629,93 @@ It is not enough to test the end product of each phase. Ideally, testing occurs 
 **White-box (Glass-box or Structural) testing**: testing techniques that use the source code as the point of reference for test selection and adequacy. Structural testing includes **control flow** testing and **data flow** testing
     - a.k.a. program-based testing, structural testing and data driven test
     
+- Looks at implementation details
+- Aims at exercising the different control and data structures used in the program (control flow testing and data flow testing).
+- Requires the programmer knowledge of the source code
+- Criteria are quite precise as they are based on program structures and data structures.
+- Assumes that the source code fully implements the specification.
+    
 **Black-box (or functional) testing**: testing techniques that use the functional specification as the point of reference for test selection and adequacy. **Class partitioning** and **boundary value analysis**
     - specification-based testing, functional testing
     
+**Test coverage: how to measure it?**
+
+Software reliability increse cost, but bugs in system can increase too.
+
+<br>
+
+<div align="center"><img src="img/testcoverage-w725-h406.png" width=725 height=406><br><sub>Fig 17 - Test Coverage - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+**White-box versus black-box testing**
+
+- The real difference between white-box and black-box testing is how test cases are generated and how adequacy is determined -> **Test case = inputs + expected outcome**
+- In both cases, usually, the correctness of the program being tested is done via specifications
+- Neither can be exhaustive
+- Each techniques has its strengths and weaknesses
+
+**Is complete testing possible?**
+
+- NO. Complete testing is both practically and theoretically impossible for non-trivial software.
+
+**Complete functional testing**
+
+- A complete functional test would consist of submitting all possible input streams to the program under test.
+- Even if the program has an input stream of 10 characters, it would require 280 tests.
+- At 1 microsecond/test, exhaustive functional testing would require more time than twice the current estimated age of the universe!
+
+**Complete structural testing**
+
+- One should design enough tests to ensure that every path is executed at least once.
+- The number of paths may be too large.
+- Executing a program path does not assure program correctness.
+
+**Small versus large systems**
+
+- For small systems with one user, quality assurance may not be a major concern.
+- As systems scale up in size and number of users, quality assurance becomes more of a concern.
+- As systems dramatically scale up in size (e.g., millions of lines of code), our quality criteria may have to change as exhaustive testing may not be economically possible. E.g., a 75% code coverage may be acceptable.
+
+**Typical testing strategies**
+
+- Divide-and-conquer. Begin by ‘testing-in-the-small’ and move toward ‘testing-in-the-large’
+- For conventional software:
+    - The module (component) is our initial focus
+    - Integration of modules follows
+
+- Identify the appropriate testing phases for the given release, and the types of testing that need to be performed.
+- Prioritize the testing activities.
+- Plan how to deal with “cycles”.
+    
 #### <a name="chapter4part3"></a>Chapter 4 - Part 3: White-box: Control-flow testing
+
+- **Control-flow testing** is a structural testing strategy that uses the program control flow as a model.
+- Control-flow testing techniques are based on judiciously selecting a set of test paths through the program
+- The set of paths chosen is used to achieve a certain measure of testing completeness. For example
+    - Select paths to assure that every source statement is executed at least once.
+    - Select paths to achieve complete branch coverage
+
+- Control-flow testing is most applicable to new software for unit testing.
+- Control-flow testing assumptions:
+    - specifications are correct and fully implemented in the code
+    - data is defined and accessed properly
+    - there are no bugs other than those that affect control flow
+
+- Structured and OO languages reduce the number of control-flow bugs.
+
+**Control flow graphs (CFG)**
+
+- The control flow graph is a graphical representation of a program control structure
+
+Three primitives:
+    - A decision is a program point at which the control can diverge.
+        - (e.g., if and case statements).
+    - A junction is a program point where the control flow can merge.
+        - (e.g., end if, end loop, goto label)
+    - A basic block is a sequence of program statements uninterrupted by either decisions or junctions. (i.e., straight-line code).
+        - A basic block has one entry and one exit.
+        - A program does not jump into or out of a basic block.
 
 #### <a name="chapter4part4"></a>Chapter 4 - Part 4: White-box: Data flow testing
 
