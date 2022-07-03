@@ -19,11 +19,12 @@
     - [Chapter 4 - Part 4: White-box: Data flow testing](#chapter4part4)
     - [Chapter 4 - Part 5: Black-box: Equivalence Classes](#chapter4part5)
     - [Chapter 4 - Part 6: Black-box: Boundary Value Analysis](#chapter4part6)
-    - [Chapter 4 - Part 7: Model-based Testing](#chapter4part7)
-    - [Chapter 4 - Part 8: Coverage Criteria](#chapter4part8)
-    - [Chapter 4 - Part 9: Testing Parallel and Distributed Systems](#chapter4part9)
-    - [Chapter 4 - Part 10: Regression Testing](#chapter4part10)
-    - [Chapter 4 - Part 11: Defect tracking and ODC](#chapter4part11)
+    - [Chapter 4 - Part 7: Other testing approaches](#chapter4part7)
+    - [Chapter 4 - Part 8: Model-based Testing](#chapter4part8)
+    - [Chapter 4 - Part 9: Coverage Criteria](#chapter4part9)
+    - [Chapter 4 - Part 10: Testing Parallel and Distributed Systems](#chapter4part10)
+    - [Chapter 4 - Part 11: Regression Testing](#chapter4part11)
+    - [Chapter 4 - Part 12: Defect tracking and ODC](#chapter4part12)
 5. [Chapter 5: Development Models and Standards](#chapter5)
     - [Chapter 5 - Part 1: Software Life Cycle Processes](#chapter5part1)
     - [Chapter 5 - Part 2: Software Product Quality](#chapter5part2)
@@ -1035,15 +1036,27 @@ Key rules to generate the graph:
 
 <br>
 
-#### <a name="chapter4part7"></a>Chapter 4 - Part 7: Model-based Testing
+- Numeric values are often entered as strings which are then converted to numbers internally [int x = atoi(str);]
+- This conversion requires the program to distinguish between digits and non-digits
+- A boundary case to consider: should the program accept / and : as digits?
 
-#### <a name="chapter4part8"></a>Chapter 4 - Part 8: Coverage Criteria
+#### <a name="chapter4part7"></a>Chapter 4 - Part 7: Other testing approaches
 
-#### <a name="chapter4part9"></a>Chapter 4 - Part 9: Testing Parallel and Distributed Systems
+<br>
 
-#### <a name="chapter4part10"></a>Chapter 4 - Part 10: Regression Testing
+<div align="center"><img src="img/bd2-w592-h231.png" width=582 height=231><br><sub>Fig 19 - Black-box: Boundary Value Analysis - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
 
-#### <a name="chapter4part11"></a>Chapter 4 - Part 11: Defect tracking and ODC
+<br>
+
+#### <a name="chapter4par8"></a>Chapter 4 - Part 8: Model-based Testing
+
+#### <a name="chapter4part9"></a>Chapter 4 - Part 9: Coverage Criteria
+
+#### <a name="chapter4part10"></a>Chapter 4 - Part 10: Testing Parallel and Distributed Systems
+
+#### <a name="chapter4part11"></a>Chapter 4 - Part 11: Regression Testing
+
+#### <a name="chapter4part12"></a>Chapter 4 - Part 12: Defect tracking and ODC
 
 ## <a name="chapter5"></a>Chapter 5: Development Models and Standards
 
