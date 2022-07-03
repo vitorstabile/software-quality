@@ -1076,7 +1076,7 @@ Key rules to generate the graph:
 
 <br>
 
-<div align="center"><img src="img/othertest8-w710-h489.png" width=710 height=481><br><sub>Fig 19 - Model Based Teste - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+<div align="center"><img src="img/othertest8-w710-h479.png" width=710 height=481><br><sub>Fig 19 - Model Based Teste - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
 
 <br>
 
