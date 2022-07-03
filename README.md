@@ -507,6 +507,34 @@ Related to general system engineering techniques (design methodologies, construc
 
 <br>
 
+**Information redundancy techniques**
+
+- Coding:
+  - Information is represented with more bits that strictly necessary: says, an n-bit information chunck is represented by n + c = m bits
+  - Among all the possible 2m configurations of the m bits, only 2n represent acceptable values (code words)
+  - If a non-code word appears, it indicates an error in transmitting, or storing, or retrieving
+  - Examples: checksums, error correction and detection, cyclic redundancy check (CRC),….
+
+- Self-checking circuits (or SW operations):
+  - A circuit that has the ability to automatically detect the existence of errors and the detection occurs during the normal course of its operations
+  - Typically obtained using coding techniques (e.g., reverse operation, etc).
+  - Examples: built-in self-test (BIST), coded-processors,…
+
+**Time redundancy techniques**
+
+- Reduce the amount of extra hardware at the expense of using additional time
+  - Repetition of computations & comparison the results to detect errors
+  - Good for transient faults; no protection against permanent fault
+  - Problem of guaranteeing the same data when a computation is executed (after a transient fault system data can be completely corrupted)
+  - May use a minimum of extra hardware to detect also permanent faults. E.g., encode data before executing the second computation
+  - Examples: re-execution, sending messages twice
+
+<br>
+
+<div align="center"><img src="img/hwr7-w736-h238.png" width=736 height=238><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 **Software redundancy techniques**
 
 Two Ways: 
@@ -528,13 +556,19 @@ Examples: **Data consistency**: check the range of variables, input parameters, 
           **Time consistency**: check time limits for given operations, such as timeouts
           **Detection of invalid instruction codes** (n bit to represent 2k legal instruction codes: 2n - 2k are illegal)
           
+ - Watchdog processors: Sometimes an external mechanism is needed to check assertions. In general, needs both HW + SW
+          
  **Capability check**
  
  Verify that a system has the expected capability (hardware testing)
  
  Memory test: write and read some locations
  
- **Software diversity**
+ Is the ALU working well? à Execute specific instructions on specific data and compare the result with the expected one (written in a ROM memory)
+ 
+ In a multiprocessor, are processes working properly? Are they capable of communicating? à Execute testing programs and compare the results with the expected ones
+ 
+ **Software diversity - N-version programming**
  
  Independently developed versions of design and code from the same set of requirements.
  
@@ -542,14 +576,75 @@ Examples: **Data consistency**: check the range of variables, input parameters, 
  
  Vote on the N results produced
  
+<br>
+
+<div align="center"><img src="img/hwr8-w409-h345.png" width=409 height=345><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+Disadvantages:
+  - Cost of resources
+  - Cost of concurrent executions
+  - Potential source of correlated errors
+    - The original requirements and specification
+    - Humans tend to fail in similar modes (social and education commonalities)
+  - Requirements and specification mistakes are not tolerated (fault avoidance)
+
+Software voter (it is a technical challenge):
+  - Not replicated; single point of failure: must be simple and verifiable
+  - Must assure that the input data vector to each of the versions is identical
+  - Must receive data from each version in identical formats or make efficient conversions
+  - Must implement some sort of communication protocol to wait until all versions complete their processing or recognize the versions that do not complete
+
+ **Software diversity - N-self-checking programming**
+ 
+ - Based on acceptance tests rather than comparison with equivalent versions
+ - N versions of the program are written
+ - Each version is running simultaneously and includes its acceptance tests
+ - The selection logic chooses the results from one of the programs that passes the acceptance tests
+ - Tolerates N-1 faults (independent faults)
+
+<br>
+
+<div align="center"><img src="img/hwr9-w560-h275.png" width=560 height=275><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+ 
  **Error recovery**
  
- **Forward recovery**: transform the erroneous state in a new state from which the system can operate
+ - **Forward recovery**: transform the erroneous state in a new state from which the system can operate
+   - Requires the assessment of damages caused by the detected error or by errors propagated before detection (not easy…)
+   - Usually ad hoc
+   - Example of application: 
+     - Real-time control systems in which an occasional missed response to a sensor input is tolerable
+     - The system can recover by skipping its response to the missed sensor input.
  
- **Backward recovery**: bring the system back to a state prior to the error occurrence
- 
- - Checkpointing
- - Recovery block
+ - **Backward recovery**: bring the system back to a state prior to the error occurrence. Checkpoint and backward recovery are highly successful in databases and in transactional systems in general
+   - **Checkpointing**: a copy of the current state for possible use in rollback.
+     - May be taken automatically (periodically) or upon request by program
+     - Need to be correct
+     - Need eventually to be discarded
+     - Survival of checkpoint data in the presence of faults is critical: stable storage
+     - Loss: computation time between the checkpointing and the rollback; data received during that interval
+     - Overhead of saving system state Important goal: to minimize the amount of state information that must be saved
+   - **Recovery block**: Each recovery block contains variables global to the block that will be automatically checkpointed if they are altered within the block
+     - Upon entry to a recovery block, the primary alternate is executed and subjected to an acceptance test to detect any error in the result
+     - If the test is passed, the block is exited
+     - If the test fails or the primary alternative fails to execute, the content of the recovery cache pertinent to the block is reinstated, and the second alternate is executed.
+     - This cycle is executed until either an alternative is successful or no more alternatives exist. In this case an error is reported.
+     - A single acceptance test
+     - Only one single implementation of the program is run at a time
+     - Combines elements of checkpointing and backup
+     - Minimizes the information to be backed up
+     - Releases the programmer from determining which variables should be checkpointed and when linguistic structure for recovery blocks requires a suitable mechanism for providing automatic backward error recovery
+
+<br>
+
+<div align="center"><img src="img/hwr10-w733-h255.png" width=733 height=255><br><sub>Fig 16 - Fault Tolerant - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br> 
+
+Backward and forward recovery are not exclusive; they can be combined if the error persists
 
  **Error Detection**
  
@@ -563,6 +658,20 @@ Examples: **Data consistency**: check the range of variables, input parameters, 
 – Execution of checks on the behavior (variables, results, etc.) of the target system. The checks use a simplified view of the target behavior (behavior abstraction)
 – The detection is done by a separate mechanisms called, in general, watchdog. In some implementations, the watchdog requires specific hardware.
 – Watchdog can range from a simple watchdog times to complex watchdog processors
+
+- **Error detection effectiveness**
+  - Coverage
+    - Probability that an error is detected, conditional on its occurrence
+
+  - Latency
+    - Time elapsing between the occurrence of an error and its detection.
+
+  - Overhead
+    - Cost of the error detection. It may include (extra) hardware, software, memory space, computing time, etc.
+
+  - Damage Confinement
+    - Error propagation path
+    - The wider the propagation, the more likely that errors will spread outside the system
 
 ## <a name="chapter3"></a>Chapter 3: Analysis and Formal Methods (Static)
 
