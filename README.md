@@ -586,6 +586,48 @@ The idea is a static approache without actually running the code
 
 #### <a name="chapter3part2"></a>Chapter 3 - Part 2: Inspections (Formal Peer Reviews)
 
+- **Goal**: confirms that the software product satisfies:
+  - Specifications
+  - Specified quality attributes
+  - Regulations, standards, guidelines, plans
+  - Identifies deviations from standard and specification (find anomalies, in general; much more than code bugs)
+
+- **Failure to do so results in logging a defect**
+
+- **The focus is on finding defects; not try to solve them during the inspection**
+- Management is encouraged not to look at individual inspection results
+
+- **Software products/artifacts subject to inspections**
+  - Nearly any product or element produced in the software development lifecycle:
+    - Software requirements specification
+    - Software design description
+    - Source code
+    - Software test documentation
+    - Software user documentation
+    - Maintenance manual
+    - Release notes
+
+- **Inspection materials**
+  - Source document
+  - Checklists
+  - Supporting documents
+  - Invitations
+  - Inspection plan
+  - Issue/defect log
+  - Data summary
+
+- **Inspections roles**
+  - Designated moderator
+    - An inspector responsible for organizing and reporting on inspection
+  - Author
+    - Developer of software product
+  - Reader
+    - An inspector who guides the examination of the product (often reads aloud)
+  - Recorder
+    - An inspector who enters all the defects found on the defect list
+  - Inspector
+    - Member of inspection team. Often chosen to represent specific role such as designer, tester, technical writer, SQA, etc.
+
 ## <a name="chapter4"></a>Chapter 4: Software Testing (Dynamic)
 
 #### <a name="chapter4part1"></a>Chapter 4 - Part 1: Unit Testing, Integration Testing, and System Testing
