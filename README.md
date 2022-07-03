@@ -926,6 +926,10 @@ Key rules to generate the graph:
 <div align="center"><img src="img/dataflow9-w730-h494.png" width=730 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
 
 <br>
+
+<div align="center"><img src="img/dataflow10-w730-h494.png" width=730 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
         
 #### <a name="chapter4part5"></a>Chapter 4 - Part 5: Black-box: Equivalence Classes
 
