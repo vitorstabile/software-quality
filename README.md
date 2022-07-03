@@ -1056,7 +1056,8 @@ Key rules to generate the graph:
 
 <br>
 
-**Ad hoc exploratory testing**: 
+**Ad hoc exploratory testing**:
+
     - Based on intuition, guess what kinds of inputs might cause the program to fail
     - Create some test cases based on your guesses
     - Intuition will often lead you toward boundary cases, but not always and, above all, not in a structured way.
@@ -1066,6 +1067,7 @@ Key rules to generate the graph:
         - Try strange but legal URLs: hTtP://Www.bYu.EDU/
         
 **Comparison testing**:
+
     - Also called Back-to-Back testing
     - When having multiple implementations of the same functionality, one can run test inputs through both implementations, and compare the results for equality
     - Why multiple implementations?
@@ -1075,6 +1077,7 @@ Key rules to generate the graph:
      - Inputs may be randomly generated or designed manually
      
 **Testing for race conditions and other timing dependencies**
+
     - Testing for race conditions and other timing dependencies
         - Operating systems manage concurrent programs, interrupts, etc.
         - Servers service many clients simultaneously
@@ -1084,6 +1087,7 @@ Key rules to generate the graph:
     - Test on hardware of various speeds to ensure that your system works well on both slower and faster machines
     
 **Performance testing**
+
     - Measure the system performance
         - Running times of various tasks
         - Throughput (no. of tasks executed by in a given amount of time)
@@ -1095,6 +1099,7 @@ Key rules to generate the graph:
         - Process/thread priorities (Does it play well with other applications, or does it hog the whole machine?)
         
  **Limit testing**
+ 
     - Test the system at the limits of normal use
     - Test every limit on the program behavior defined in the requirements
         - Maximum number of concurrent users or connections
@@ -1107,6 +1112,7 @@ Key rules to generate the graph:
         - Does the system performance degrade dramatically, or gracefully?
         
 **Stress testing**
+
     - Test the system under extreme conditions (i.e., beyond the limits of normal use)
     - Create test cases that demand resources in abnormal quantity, frequency, or volume
         - Low memory conditions
@@ -1115,10 +1121,10 @@ Key rules to generate the graph:
         - Unusually high number of requests
         - Unusually large requests or files
         - Unusually high data rates (what happens if the network suddenly becomes ten times faster?)
-        
     - Even if the system does not need to work in such extreme conditions, stress testing is an excellent way to find bugs.
     
 **Security Testing**
+
     - Any system that manages sensitive information or performs sensitive functions may become a target for intrusion (i.e., hackers)
     - How feasible is it to break into the system?
     - Learn the techniques used by hackers
@@ -1128,6 +1134,7 @@ Key rules to generate the graph:
     - If an authorized user became disgruntled, what damage could they do?
     
 **Usability Testing**
+
     - Is the user interface intuitive, easy to use, organized, logical?
     - Are common tasks simple to do?
     - Does it conform to platform-specific conventions?
@@ -1137,12 +1144,36 @@ Key rules to generate the graph:
     - Report bugs for any problems encountered
     
 **Recovery testing**
+
     - Try turning the power off or otherwise crashing the program at arbitrary points during its execution
         - Does the program come back up correctly when you restart it?
         - Was the program persistent data corrupted (files, databases, etc.)?
         - Was the extent of user data loss within acceptable limits?
     - Can the program recover if its configuration files have been corrupted or deleted?
     - What about hardware failures? Does the system need to keep working when its hardware fails? If so, verify that it does so.
+    
+**Configuration testing**
+
+    - Test on all required hardware configurations
+        - CPU, memory, disk, graphics card, network card, etc.
+    - Test on all required operating systems and versions thereof
+        - Virtualization technologies such as VMWare and Virtual PC are very helpful for this
+    - Test as many Hardware/OS combinations as you can
+    - Test installation programs and procedures on all relevant configurations
+    
+**Compatibility testing**
+
+    - Test to make sure the program is compatible with other programs it is supposed to work with
+    - Ex: Can Word 12.0 load files created with Word 11.0?
+    - Ex: "Save As… Word, Word Perfect, PDF, HTML, Plain Text"
+    - Ex: "This program is compatible with Internet Explorer and Firefox”
+    - Test all compatibility requirements
+    
+**Documentation based testing**
+
+    - Test all instructions given in the documentation to ensure their completeness and accuracy
+    - For example, “How To ...” instructions are sometimes not updated to reflect changes in the user interface
+    - Test user documentation on real users to ensure it is clear and complete
 
 #### <a name="chapter4part8"></a>Chapter 4 - Part 8: Model-based Testing
 
