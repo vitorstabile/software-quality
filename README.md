@@ -15,11 +15,15 @@
 4. [Chapter 4: Software Testing (Dynamic)](#chapter4)
     - [Chapter 4 - Part 1: Unit Testing, Integration Testing, and System Testing](#chapter4part1)
     - [Chapter 4 - Part 2: Black-box and White-box Testing](#chapter4part2)
-    - [Chapter 4 - Part 3: Model-based Testing](#chapter4part3)
-    - [Chapter 4 - Part 4: Coverage Criteria](#chapter4part4)
-    - [Chapter 4 - Part 5: Testing Parallel and Distributed Systems](#chapter4part5)
-    - [Chapter 4 - Part 6: Regression Testing](#chapter4part6)
-    - [Chapter 4 - Part 7: Defect tracking and ODC](#chapter4part7)
+    - [Chapter 4 - Part 3: White-box: Control-flow testing](#chapter4part3)
+    - [Chapter 4 - Part 4: White-box: Data flow testing](#chapter4part4)
+    - [Chapter 4 - Part 5: Black-box: Equivalence Classes](#chapter4part5)
+    - [Chapter 4 - Part 6: Black-box: Boundary Value Analysis](#chapter4part6)
+    - [Chapter 4 - Part 7: Model-based Testing](#chapter4part7)
+    - [Chapter 4 - Part 8: Coverage Criteria](#chapter4part8)
+    - [Chapter 4 - Part 9: Testing Parallel and Distributed Systems](#chapter4part9)
+    - [Chapter 4 - Part 10: Regression Testing](#chapter4part10)
+    - [Chapter 4 - Part 11: Defect tracking and ODC](#chapter4part11)
 5. [Chapter 5: Development Models and Standards](#chapter5)
     - [Chapter 5 - Part 1: Software Life Cycle Processes](#chapter5part1)
     - [Chapter 5 - Part 2: Software Product Quality](#chapter5part2)
@@ -564,8 +568,6 @@ It is not enough to test the end product of each phase. Ideally, testing occurs 
 **Coincidental correctness**: A program is said to be coincidentally correct if the test results in the expected outcome, even though the program performs the incorrect computation.
     - Example: A program calculates y = x2. It is incorrectly programmed as y = 2x, and it is tested with the input value x = 2.
 
-
-    
 **Software testing axioms**
        
     - 1 It is impossible to test a program completely.
@@ -624,15 +626,29 @@ It is not enough to test the end product of each phase. Ideally, testing occurs 
 
 #### <a name="chapter4part2"></a>Chapter 4 - Part 2: Black-box and White-box Testing
 
-#### <a name="chapter4part3"></a>Chapter 4 - Part 3: Model-based Testing
+**White-box (Glass-box or Structural) testing**: testing techniques that use the source code as the point of reference for test selection and adequacy. Structural testing includes **control flow** testing and **data flow** testing
+    - a.k.a. program-based testing, structural testing and data driven test
+    
+**Black-box (or functional) testing**: testing techniques that use the functional specification as the point of reference for test selection and adequacy. **Class partitioning** and **boundary value analysis**
+    - specification-based testing, functional testing
+    
+#### <a name="chapter4part3"></a>Chapter 4 - Part 3: White-box: Control-flow testing
 
-#### <a name="chapter4part4"></a>Chapter 4 - Part 4: Coverage Criteria
+#### <a name="chapter4part4"></a>Chapter 4 - Part 4: White-box: Data flow testing
 
-#### <a name="chapter4part5"></a>Chapter 4 - Part 5: Testing Parallel and Distributed Systems
+#### <a name="chapter4part5"></a>Chapter 4 - Part 5: Black-box: Equivalence Classes
 
-#### <a name="chapter4part6"></a>Chapter 4 - Part 6: Regression Testing
+#### <a name="chapter4part6"></a>Chapter 4 - Part 6:  Black-box: Boundary Value Analysis
 
-#### <a name="chapter4part7"></a>Chapter 4 - Part 7: Defect tracking and ODC
+#### <a name="chapter4part7"></a>Chapter 4 - Part 7: Model-based Testing
+
+#### <a name="chapter4part8"></a>Chapter 4 - Part 8: Coverage Criteria
+
+#### <a name="chapter4part9"></a>Chapter 4 - Part 9: Testing Parallel and Distributed Systems
+
+#### <a name="chapter4part10"></a>Chapter 4 - Part 10: Regression Testing
+
+#### <a name="chapter4part11"></a>Chapter 4 - Part 11: Defect tracking and ODC
 
 ## <a name="chapter5"></a>Chapter 5: Development Models and Standards
 
