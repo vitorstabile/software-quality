@@ -727,6 +727,26 @@ Three primitives:
 
 <br>
 
+<div align="center"><img src="img/cfg3-w227-h364.png" width=227 height=364><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg4-w678-h450.png" width=678 height=450><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg5-w737-h465.png" width=737 height=465><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg6-w812-h478.png" width=812 height=478><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/cfg7-w832-h464.png" width=832 height=464><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
 #### <a name="chapter4part4"></a>Chapter 4 - Part 4: White-box: Data flow testing
 
 #### <a name="chapter4part5"></a>Chapter 4 - Part 5: Black-box: Equivalence Classes
