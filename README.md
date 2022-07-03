@@ -1044,11 +1044,49 @@ Key rules to generate the graph:
 
 <br>
 
-<div align="center"><img src="img/bd2-w592-h231.png" width=582 height=231><br><sub>Fig 19 - Black-box: Boundary Value Analysis - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+<div align="center"><img src="img/othertest-w712-h456.png" width=712 height=456><br><sub>Fig 19 - Teste Evolution - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/othertest2-w718-h494.png" width=718 height=494><br><sub>Fig 19 - Teste Evolution - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/othertest3-w728-h486.png" width=728 height=486><br><sub>Fig 19 - Teste Evolution - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
 
 <br>
 
 #### <a name="chapter4par8"></a>Chapter 4 - Part 8: Model-based Testing
+
+<br>
+
+<div align="center"><img src="img/othertest4-w705-h491.png" width=705 height=491><br><sub>Fig 19 - Model Based Teste - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/othertest5-w706-h479.png" width=706 height=479><br><sub>Fig 19 - Model Based Teste - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/othertest6-w710-h481.png" width=710 height=481><br><sub>Fig 19 - Model Based Teste - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/othertest7-w707-h487.png" width=707 height=487><br><sub>Fig 19 - Model Based Teste - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/othertest8-w710-h489.png" width=710 height=481><br><sub>Fig 19 - Model Based Teste - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/othertest9-w716-h492.png" width=716 height=492><br><sub>Fig 19 - Model Based Teste - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/othertest10-w686-h460.png" width=686 height=460><br><sub>Fig 19 - Model Based Teste - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
 
 #### <a name="chapter4part9"></a>Chapter 4 - Part 9: Coverage Criteria
 
