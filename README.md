@@ -10,6 +10,8 @@
 3. [Chapter 3: Analysis and Formal Methods (Static)](#chapter3)
     - [Chapter 3 - Part 1: Inspections, Reviews, and Audits](#chapter3part1)
     - [Chapter 3 - Part 2: Inspections (Formal Peer Reviews)](#chapter3part2)
+    - [Chapter 3 - Part 3: Requirements Inspections](#chapter3part3)
+    - [Chapter 3 - Part 4: Inspections Documents](#chapter3part4)
 4. [Chapter 4: Software Testing (Dynamic)](#chapter4)
     - [Chapter 4 - Part 1: Unit Testing, Integration Testing, and System Testing](#chapter4part1)
     - [Chapter 4 - Part 2: Black-box and White-box Testing](#chapter4part2)
@@ -627,6 +629,191 @@ The idea is a static approache without actually running the code
     - An inspector who enters all the defects found on the defect list
   - Inspector
     - Member of inspection team. Often chosen to represent specific role such as designer, tester, technical writer, SQA, etc.
+
+- **Inspections roles: minimum format**
+  - At a minimum a formal inspection includes
+    - Designated moderator
+    - Author of the work
+    - At least one peer inspector
+  - Walkthroughs generally do not include designated moderator and are often led by the author of the software.
+
+- **Steps of inspection**
+  - Planning
+  - Overview
+  - Preparation
+  - Meeting
+  - Rework
+  - Follow-up
+
+- **Planning**
+  - Planning begins when inspection entry criteria have been met; the product is complete and of a reasonable quality level
+  - Inspection team is selected and roles assigned
+  - Moderator is selected – usually a peer or technical leader. Selection may be made by developer, but this is generally not an ideal situation
+  - Moderator verifies that
+    - The product meets entry criteria and schedules future steps.
+    - The inspection package compiled (work product, standards, defect type list, etc.)
+  - Moderator sends inspection announcement
+
+- **Overview**
+  - The overview meeting is conducted by the designated moderator with the following goals:
+    - Presents inspectors with any background information needed to properly review software product
+    - Ensure inspection team obtains common understanding of the software product.
+    - Ensure each team member understands role and responsibility.
+    - Data collected is author preparation time and time spent in the overview meeting.
+
+- **Preparation**
+  - Individual activity (done by all inspectors)
+  - Author provides all the material required for inspection.
+  - Inspectors study the material and complete inspection log.
+  - Defects are noted at this step, but not collected
+
+- **Meeting**
+  - Meeting is conducted by moderator
+  - Agenda includes:
+    - Introduction
+    - Establishing readiness (moderator records individual preparation time; if inadequate, reschedule inspection meeting)
+    - Examining material and recording defects
+    - Debrief
+  - During the meeting the moderator should:
+    - Ensure focus of meeting remains on identifying defects
+    - Ensure that the reader proceeds at an appropriate pace and all inspectors participate
+    - Ensure each inspector fulfills the role assigned
+    - Ensure defects identified are categorized by severity, type, and class, based on team consensus
+    - Record work product issues where team consensus cannot be reached
+    - Record non-product issues as identified
+    - Ensure maximum meeting time is not exceeded (2 hours)
+    - Ensure the entire work product is inspected (or 2 hour limit reached)
+    - Ensure inspection defect list is complete and accurate
+    - Review all issues recorded and record any resolutions
+    - Determine need for reinspection
+    - Record total inspection time
+  - Common meeting problems
+    - Interpersonal tensions are most likely to arise at this point
+    - Experienced moderators can detect and defuse this tension
+    - The more inspections that occur, the less likely interpersonal tensions are to interfere
+    - Effort should be made by all participants to keep emphasis on producing quality product, not making fault finding personal
+
+- **Rework**
+  - Performed by the author in response to defect disposition determined at meeting
+
+- **Follow-up**
+  - The follow up of the work depends on the project management process; in general is the project manager that assures that the defects are corrected and conform to project standards.
+  - In some cases, the inspection moderator could be in charged of assuring that the corrections are done.
+  - One important issue is to determine if the rework was significant enough to justify a reinspection
+
+<br>
+
+<div align="center"><img src="img/inspection-w810-h556.png" width=810 height=556><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+- **responsibilities of the moderator**
+  - Understand the information being inspected
+  - Lead the team in an effective discussion
+  - Mediate disputes
+  - Recognize key issues and keep the team focused on them
+  - Maintain an unbiased view of the information being presented\
+  - Assign responsibilities appropriately
+
+- **responsibilities of the author**
+  - Insure that the work product is ready for inspection
+  - Make required information available on time
+  - Support the moderator in making meeting arrangements, providing copies of materials, and establishing schedules for any required corrective action
+  - Promptly resolve all problems identified
+  - Remain objective and avoid becoming defensive
+
+- **responsibilities of the reader**
+  - Be thoroughly familiar with the work product being inspected
+  - Identify logical chunks of information and be able to paraphrase the information in each chunk to allow the moderator to keep the team focused on one chunk at a time
+  - Support the moderator
+
+- **responsibilities of the inspectors**
+  - Be thoroughly familiar with the work product being inspected as well as the appropriate documents and standards for the product
+  - Identify discrepancies between the work product and applicable documents and standards
+  - Focus on identifying problems, not solving them
+  - Remain objective
+  - Criticize the product not the producer
+  - Support the moderator
+
+- **responsibilities of the recorder**
+  - Be thoroughly familiar with the work product being inspected
+  - Record all issues raised by the team and ensure that they are recorded correctly
+  - Record additional information as requested by the moderator
+  - Support the moderator
+
+- **Responsibilities of the project manager**
+  - Help decide what to inspect
+  - Include inspections in project schedules
+  - Allocate resources for inspections
+  - Support inspection training
+  - Participate in the selection of moderators
+  - Support the moderator in completing any required rework
+
+#### <a name="chapter3part3"></a>Chapter 3 - Part 3: Requirements Inspections
+
+- **Why are requirements inspections important?**
+  - Requirements are the most common source of problems in the development process
+  - Requirements are written in natural language by people who typically have little or no training in writing software requirements
+  - Natural language (English, Portuguese,…) is imprecise, ambiguous, and nondeterministic
+
+- **Attributes of good requirements specifications**
+  - Unambiguous
+  - Complete
+  - Verifiable
+  - Consistent
+  - Modifiable
+  - Traceable
+  - Usable
+
+- **Requirements inspection objectives**
+  - Make sure each requirement in the Software Requirements Specification (SRS) is clear, concise, internally consistent, unambiguous, and testable
+  - Make sure each requirement in the SRS is consistent and traceable to the document that preceded the SRS
+
+<br>
+
+<div align="center"><img src="img/inspection2-w703-h494.png" width=703 height=494><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/inspection3-w964-h252.png" width=964 height=252><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+#### <a name="chapter3part4"></a>Chapter 3 - Part 4: Inspections Documents
+
+<br>
+
+<div align="center"><img src="img/inspection4-w699-h467.png" width=699 height=467><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/inspection5-w704-h484.png" width=704 height=484><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/inspection6-w703-h398.png" width=703 height=398><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/inspection7-w705-h489.png" width=705 height=489><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/inspection8-w688-h494.png" width=688 height=494><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/inspection9-w694-h496.png" width=694 height=496><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/inspection10-w679-h488.png" width=679 height=488><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/inspection11-w688-h483.png" width=688 height=483><br><sub>Fig 16 - Inspection - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
 
 ## <a name="chapter4"></a>Chapter 4: Software Testing (Dynamic)
 
