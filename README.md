@@ -9,9 +9,7 @@
     - [Chapter 2 - Part 2: Software Dependability Techniques](#chapter2part2)
 3. [Chapter 3: Analysis and Formal Methods (Static)](#chapter3)
     - [Chapter 3 - Part 1: Inspections, Reviews, and Audits](#chapter3part1)
-    - [Chapter 3 - Part 2: Automated Static Analysis](#chapter3part2)
-    - [Chapter 3 - Part 3: Formal Methods for Specification and Verification](#chapter3part3)
-    - [Chapter 3 - Part 4: Model checking](#chapter3part4)
+    - [Chapter 3 - Part 2: Inspections (Formal Peer Reviews)](#chapter3part2)
 4. [Chapter 4: Software Testing (Dynamic)](#chapter4)
     - [Chapter 4 - Part 1: Unit Testing, Integration Testing, and System Testing](#chapter4part1)
     - [Chapter 4 - Part 2: Black-box and White-box Testing](#chapter4part2)
@@ -490,11 +488,103 @@ Examples: **Data consistency**: check the range of variables, input parameters, 
 
 #### <a name="chapter3part1"></a>Chapter 3 - Part 1: Inspections, Reviews, and Audits
 
-#### <a name="chapter3part2"></a>Chapter 3 - Part 2: Automated Static Analysis
+The idea is a static approache without actually running the code
 
-#### <a name="chapter3part3"></a>Chapter 3 - Part 3: Formal Methods for Specification and Verification
+- Systematic software reviews -> Manual/expert analysis of documentation, code, etc
+- Automated static analysis -> Tools that point potential problems
+- Formal methods for specification and verification: model checking -> Models and techniques to prove program correctness or to expose the violation of properties
 
-#### <a name="chapter3part4"></a>Chapter 3 - Part 4: Model checking
+**Software reviews**
+
+- Software reviews are a “quality improvement processes for written material”.
+- Follow the general idea that written material (e.g., papers, books, leaflets, … and software) must go to successive review (“re view”) interactions to improve quality.
+- Goal: Detect Defects early and preventing 
+- Help supporting the objectives of
+  - Project management
+  - Systems engineering
+  - Verification and validation
+  - Configuration management
+  - Quality assurance
+
+- Reviews are applicable to software products throughout the software life cycle
+  - Requirements
+  - Design
+  - Coding
+  - Testing
+  - Maintenance
+
+**Types of software reviews**
+
+- **Buddy checking**
+  - Informal review of a document or work done by a person (other than the author). In general, this does not involve the use of checklists to guide the process and as such is not repeatable.
+
+- **Walkthrough**
+  - Presentation done by the author of an artifact to a peer audience to provide the author comments and feedbacks. Usually, involves limited documentation of the process and the issues uncovered, which makes defect tracking difficult.
+
+- **Review by circulation (often called asynchronous review)**
+  - Consist of circulating an artifact among peers for comments; operates like a walkthrough but without holding a meeting. Not holding a meeting avoids potential arguments over issues, but it also misses the benefits of discussion. Most software companies use specific tools to enforce this type of reviews for code review. (GitHub, BitBucket)
+
+- **Formal inspection**
+  - Formal and managed peer review process.
+
+- **Fagan's Inspection (formal inspections)**
+  - A highly structured, clearly defined process by which software documents/artifacts are reviewed in detail by a team including the author and, ideally, the customer.
+  - Goal: To identify defects (i.e., faults or bugs) as closely as possible to the point of occurrence in order to facilitate corrective actions.
+
+- **Modern code review (asynchronous reviews)**
+  - Reviews by circulation are often called modern code reviews (although they have been proposed long time ago). These reviews are often associated with pull requests in distributed versioncontrol systems like Git. They have three important features:
+    - **Tool-based**: reviews are part of a process workflow managed by a specific tools: Critique (Google), CodeFlow (Microsoft), Phabricator (Facebook), and many more.
+    - **Asynchronous**: no need for review meetings
+    - **Lightweight**: the process is simplified to make it possible to cover large portions of the code
+
+- **What is a software artifact?**
+  - Any kind of tangible (in lato senso) element produced during the software lifecycle.
+  - Examples of software artifacts:
+    - Contracts
+    - Master project plan
+    - Progress reports
+    - Software design descriptions
+    - Release notes
+    - Software requirements specifications (SRS)
+    - Use cases
+    - UML diagrams
+    - ER diagrams
+    - Source code
+    - Testing specification
+    - Installation plans
+
+- **What is a defect?**
+  - Any occurrence in a work product that is determined to be incomplete, incorrect, or missing
+  - Informal synonyms: bug, fault, issue, problem
+
+- **Common attributes, steps, and goals**
+  - All types of reviews have these attributes in common:
+    - Team participation
+    - Documented results of the review
+    - Documented procedures for conducting the review
+   
+  - Common steps
+    - Use a static analysis technique
+    - Perform a visual examination of the software products/artifacts
+    - Detect (and correct later on):
+      - Defects
+      - Violation of design standards
+      - Other problems 
+
+  - Common Goal: detect defects early and prevent their leakage downstream
+
+- **Quality improvement due to reviews**
+  - Reviews are technical activities, not management.
+  - Reviews are proactive tests; find errors that cannot be found through (dynamic) testing
+  - Reviews can find 60-100% of all defects (according to empirical and field studies).
+  - Review data can assess/improve quality of:
+    - Product.
+    - Software development process.
+    - Review process itself.
+  - Reviews are training: improve domain knowledge, development skills, corporate culture, and group/team building.
+  - Reviews reduce project rework (rework could represent a large fraction of project cost; up to 45%).
+
+#### <a name="chapter3part2"></a>Chapter 3 - Part 2: Inspections (Formal Peer Reviews)
 
 ## <a name="chapter4"></a>Chapter 4: Software Testing (Dynamic)
 
