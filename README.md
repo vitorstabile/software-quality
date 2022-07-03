@@ -852,8 +852,81 @@ Key rules to generate the graph:
 
 <br>
 
+**Data flow terms**
 
+- **Global c-use**: A c-use of a variable ! in node " is said to be a global cuse if ! has been defined before in a node other than node i
+    - Example: The c-use of variable /0 in node 5 is a global c-use.
 
+- Definition clear path: A path (i - n1 - ...nm-j), m =>0, is called a definition clear path (def-clear path) with respect to variable x from node i to node j, and from node i to edge (nm,j), if x has been neither defined nor undefined in nodes n1-...nm.
+    - Example: (2 – 3 – 4 – 6 – 3 – 4 – 6 – 3 – 4 – 5) is a def-clear path w.r.t. tv.
+    - Example: (2 – 3 – 4 – 5) and (2 – 3 – 4 – 6) are def-clear paths w.r.t. variable /0 from node 2 to 5 and from node 2 to 6, respectively.
+
+- **Global definition**: A node " has a global definition of variable x if node i has a definition of x and there is a def-clear path w.r.t. x from node i to some node containing a global c-use, or edge containing a p-use of variable x.
+
+- **Simple path**: A simple path is a path in which all nodes, except possibly the first and the last, are distinct.
+    - Example: Paths (2 – 3 – 4 – 5) and (3 – 4 – 6 – 3) are simple paths.
+
+- **Loop-free paths**: A loop-free path is a path in which all nodes are distinct.
+
+- **Complete path**: A complete path is a path from the entry node to the exit node.
+
+- **Du-path**: A path (n1-n2-...-nj-nk) is a du-path path w.r.t. variable x if node n1 has a global definition of x and either
+    - node nk has a global c-use of x and (n1 – n2 – … – nj – nk) is a def-clear simple path w.r.t. x, or
+    - Edge (nj, nk) has a p-use of x and (n1 – n2 – … – nj – nk) is a def-clear, loop-free path w.r.t. x
+    - Example: Considering the global definition and global c-use of variable tv in nodes 2 and 5, respectively, (2 – 3 – 4 – 5) is a du-path.
+    - Example: Considering the global definition and p-use of variable tv in nodes 2 and on edge (7, 9), respectively, (2 – 3 – 7 – 9) is a du-path.
+
+**All-defs data flow testing criteria**
+    - For each variable x and each node i, such that x has a global definition in node i, select a complete path which includes a defclear path from node i to node j having a global c-use of x, or edge (j,k) having a p-use of x.
+    - Example (partial): Consider tv with its global definition in node 2. Variable tv has a global c-use in node 5, and there is a def-clear path (2 – 3 – 4 – 5) from node 2 to node 5. Choose a complete path (1 – 2 – 3 – 4 – 5 – 6 – 3 – 7 – 9 – 10) that includes the defclear path (2 – 3 – 4 – 5) to satisfy the all-defs criterion.
+    
+**All-c-uses data flow testing criteria**
+    - For each variable x and each node i, such that x has a global definition in node i, select complete paths which include def-clear paths from node i to all nodes j such that there is a global c-use of x in j.
+    - Example (partial): Consider variable -", which has a global definition in 2 and a global c-use in node 4. From node 2, the defclear path to 4 is (2 – 3 – 4). One may choose the complete path (1 – 2 – 3 – 4 – 6 – 3 – 7 – 8 – 10). (There three other complete paths.)
+    
+**All-p-uses data flow testing criteria**
+    - For each variable x and each node i, such that x has a global definition in node i, select complete paths which include def-clear paths from node i to all edges (j,k) such that there is a p-use of x on (j,k)
+    - Example (partial): Consider variable -/, which has a global definition in 2 and p-uses on edges (7, 8) and (7, 9). From node 2, there are def-clear paths to (7, 8) and (7, 9), namely (2 – 3 – 7 – 8) and (2 – 3 – 7 – 9). The two complete paths are: (1 – 2 – 3 – 7 – 8 – 10) and (1 – 2 – 3 – 7 – 9 – 10).
+    
+**All-p-uses/some-c-us data flow testing criteria**
+    - This criterion is identical to the all-p-uses criterion except when a variable x has no p-use. If x has no p-use, then this criterion reduces to the some-c-uses criterion.
+    - Some-c-uses: For each variable x and each node i, such that x has a global definition in node i, select complete paths which include defclear paths from node i to some nodes j such that there is a global c-use of x in i.
+    - Example (partial): Consider variable ", which has a global definition in 2. There is no p-use of ". Corresponding to the global definition of I in 2, there is a global c-use of I in 6. The def-clear path from node 2 to 6 is (2 – 3 – 4 – 5 – 6). A complete path that includes the above def-clear path is (1 – 2 – 3 – 4 – 5 – 6 – 7 – 9 – 10).
+    
+ **All-c-uses/some-p-uses data flow testing criteria**
+    - This criterion is identical to the all-c-uses criterion except when a variable x has no c-use. If x has no global c-use, then this criterion reduces to the some-p-uses criterion.
+    - Some-p-uses: For each variable x and each node i, such that x has a global definition in node i, select complete paths which include def-clear paths from node i to some edges (j,k) such that there is a p-use of x on (j,k)
+    
+ **All-uses data flow testing criteria**
+    - All-uses: This criterion produces a set of paths due to the all-p-uses criterion and the all-c-uses criterion.
+    
+ **All-du-paths data flow testing criteria**
+    - For each variable x and for each node i, such that x has a global definition in node i, select complete paths which include all du-paths from node i
+        - to all nodes j such that there is a global c-use of x in j, and
+        - to all edges (j,k),. such that there is a p-use of x on (j,k)
+        
+<br>
+
+<div align="center"><img src="img/dataflow5-w730-h494.png" width=730 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/dataflow6-w730-h494.png" width=730 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/dataflow7-w730-h494.png" width=730 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/dataflow8-w730-h494.png" width=730 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/dataflow9-w730-h494.png" width=730 height=494><br><sub>Fig 19 - Data Flow - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+        
 #### <a name="chapter4part5"></a>Chapter 4 - Part 5: Black-box: Equivalence Classes
 
 #### <a name="chapter4part6"></a>Chapter 4 - Part 6:  Black-box: Boundary Value Analysis
