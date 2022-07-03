@@ -570,16 +570,16 @@ It is not enough to test the end product of each phase. Ideally, testing occurs 
     - Example: A program calculates y = x2. It is incorrectly programmed as y = 2x, and it is tested with the input value x = 2.
 
 **Software testing axioms**
-       
-    - 1 It is impossible to test a program completely.
-    - 2 Software testing is a risk-based exercise.
-    - 3 Testing cannot show the absence of bugs.
-    - 4 The more bugs you find, the more bugs there are.
-    - 5 Not all bugs found will be fixed.
-    - 6 It is difficult to say when a bug is indeed a bug.
-    - 7 Specifications are never final.
-    - 8 Software testers are not the most popular members of a project.
-    - 9 Software testing is a disciplined and technical profession
+
+  - It is impossible to test a program completely.
+  - Software testing is a risk-based exercise.
+  - Testing cannot show the absence of bugs.
+  - The more bugs you find, the more bugs there are.
+  - Not all bugs found will be fixed.
+  - It is difficult to say when a bug is indeed a bug.
+  - Specifications are never final.
+  - Software testers are not the most popular members of a project.
+  - Software testing is a disciplined and technical profession
     
  When modifying existing code to either correct an existing problem or otherwise enhance the program. For this, we need **Retest** or **Regression test**
  
