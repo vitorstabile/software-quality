@@ -1266,6 +1266,14 @@ Three primitives:
     - A basic block is a sequence of program statements uninterrupted by either decisions or junctions. (i.e., straight-line code).
         - A basic block has one entry and one exit.
         - A program does not jump into or out of a basic block.
+        
+<br>
+
+<div align="center"><img src="img/allcfg-w1314-h731.png" width=1314 height=731><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
+
+<br>
+
+<div align="center"><img src="img/allcfg2-w1255-h722.png" width=1255 height=722><br><sub>Fig 18 - Control Flow Graph - (<a href='https://www.uc.pt/en/fctuc/dei'>Work by University of Coimbra - DEI - https://www.uc.pt/en/fctuc/dei </a>) </sub></div>
 
 <br>
 
